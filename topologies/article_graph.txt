@@ -1,0 +1,15 @@
+s a {'capacity': 1.0}
+s f {'capacity': 1.0}
+
+f g {'capacity': 1.0}
+
+a b {'capacity': 1.0}
+a c {'capacity': 1.0}
+a e {'capacity': 1.0}
+
+c d {'capacity': 1.0}
+
+b t {'capacity': 1.0}
+e t {'capacity': 1.0}
+d t {'capacity': 1.0}
+g t {'capacity': 1.0}

@@ -1,0 +1,93 @@
+new_york hartford {'capacity': 1}
+new_york philadelphia {'capacity': 1}
+
+philadelphia baltimore {'capacity': 1}
+
+hartford boston {'capacity': 1}
+
+boston albany {'capacity': 1}
+
+albany buffalo {'capacity': 1}
+
+baltimore washington_dc {'capacity': 1}
+baltimore ashburn {'capacity': 1}
+
+pittsburgh ashburn {'capacity': 1}
+
+cleveland pittsburgh {'capacity': 1}
+cleveland buffalo {'capacity': 1}
+cleveland toledo {'capacity': 1}
+cleveland cincinatti {'capacity': 1}
+
+cincinatti indianapolis {'capacity': 1}
+cincinatti louisville {'capacity': 1}
+
+chicago toledo {'capacity': 1}
+chicago indianapolis {'capacity': 1}
+chicago milwaukee {'capacity': 1}
+chicago st_louis {'capacity': 1}
+
+madison milwaukee {'capacity': 1}
+
+minneapolis madison {'capacity': 1}
+minneapolis kansas_city {'capacity': 1}
+minneapolis fargo {'capacity': 1}
+
+fargo bozeman {'capacity': 1}
+
+missoula bozeman {'capacity': 1}
+missoula spokane {'capacity': 1}
+
+seattle spokane {'capacity': 1}
+seattle olympia {'capacity': 1}
+seattle boise {'capacity': 1}
+
+portland olympia {'capacity': 1}
+portland eugene {'capacity': 1}
+
+sacramento eugene {'capacity': 1}
+sacramento reno {'capacity': 1}
+sacramento sunnyvale {'capacity': 1}
+
+los_angeles sunnyvale {'capacity': 1}
+los_angeles las_vegas {'capacity': 1}
+los_angeles phoenix {'capacity': 1}
+
+salt_lake_city reno {'capacity': 1}
+salt_lake_city boise {'capacity': 1}
+salt_lake_city las_vegas {'capacity': 1}
+salt_lake_city denver {'capacity': 1}
+
+phoenix tucson {'capacity': 1}
+
+el_paso tucson {'capacity': 1}
+el_paso albuquerque {'capacity': 1}
+el_paso san_antonio {'capacity': 1}
+
+denver albuquerque {'capacity': 1}
+denver kansas_city {'capacity': 1}
+
+houston san_antonio {'capacity': 1}
+houston dallas {'capacity': 1}
+houston jackson {'capacity': 1}
+houston baton_rouge {'capacity': 1}
+
+dallas tulsa {'capacity': 1}
+
+kansas_city tulsa {'capacity': 1}
+kansas_city st_louis {'capacity': 1}
+
+jackson memphis {'capacity': 1}
+
+nashville memphis {'capacity': 1}
+nashville louisville {'capacity': 1}
+nashville atlanta {'capacity': 1}
+
+pensacola baton_rouge {'capacity': 1}
+pensacola jacksonville {'capacity': 1}
+
+atlanta jacksonville {'capacity': 1}
+atlanta charlotte {'capacity': 1}
+
+raleigh charlotte {'capacity': 1}
+raleigh washington_dc {'capacity': 1}

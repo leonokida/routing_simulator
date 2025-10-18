@@ -1,0 +1,24 @@
+dojima nara {'capacity': 10}
+dojima hiroshima {'capacity': 1}
+dojima kurashiki {'capacity': 10}
+dojima sakyo {'capacity': 1}
+dojima komatsu {'capacity': 100}
+dojima ntt_otemachi {'capacity': 100}
+dojima nezu {'capacity': 10}
+
+nara sakyo {'capacity': 1}
+nara fujisawa {'capacity': 10}
+
+ntt_otemachi komatsu {'capacity': 100}
+ntt_otemachi tsukuba {'capacity': 1}
+ntt_otemachi kddi_otemachi {'capacity': 101}
+ntt_otemachi akihabara {'capacity': 100}
+ntt_otemachi yagami {'capacity': 10}
+ntt_otemachi fujisawa {'capacity': 10}
+
+kddi_otemachi akihabara {'capacity': 100}
+kddi_otemachi nezu {'capacity': 10}
+
+yagami hiyoshi {'capacity': 10}
+yagami fujisawa {'capacity': 100}
+yagami nezu {'capacity': 100}

@@ -1,0 +1,96 @@
+lis sin {'capacity': 1}
+lis por {'capacity': 1}
+lis mad {'capacity': 1}
+
+bil por {'capacity': 1}
+bil mad {'capacity': 1}
+bil par {'capacity': 1}
+
+mad mar {'capacity': 1}
+
+par dub {'capacity': 1}
+par lon {'capacity': 1}
+par bru {'capacity': 1}
+par gen {'capacity': 1}
+
+gen mar {'capacity': 1}
+gen mil {'capacity': 1}
+gen fra {'capacity': 1}
+
+lon dub {'capacity': 1}
+lon ams {'capacity': 1}
+
+bru ams {'capacity': 1}
+bru lux {'capacity': 1}
+
+fra ams {'capacity': 1}
+fra lux {'capacity': 1}
+fra pra {'capacity': 1}
+
+ham ams {'capacity': 1}
+ham cop {'capacity': 1}
+ham ber {'capacity': 1}
+
+cop ber {'capacity': 1}
+cop rey {'capacity': 1}
+cop osl {'capacity': 1}
+cop hel {'capacity': 1}
+
+osl sto {'capacity': 1}
+
+hel sto {'capacity': 1}
+hel tal {'capacity': 1}
+
+tal rig {'capacity': 1}
+
+rig vil {'capacity': 1}
+
+var ber {'capacity': 1}
+var vil {'capacity': 1}
+var pra {'capacity': 1}
+var kie {'capacity': 1}
+
+pra vie {'capacity': 1}
+
+mil mar {'capacity': 1}
+mil vie {'capacity': 1}
+mil val {'capacity': 1}
+mil tir {'capacity': 1}
+mil ath {'capacity': 1}
+mil tel {'capacity': 1}
+mil luj {'capacity': 1}
+
+mar val {'capacity': 1}
+mar nic {'capacity': 1}
+mar tel {'capacity': 1}
+
+ath nic {'capacity': 1}
+ath the {'capacity': 1}
+
+the sko {'capacity': 1}
+the sof {'capacity': 1}
+the ist {'capacity': 1}
+
+sof sko {'capacity': 1}
+sof ist {'capacity': 1}
+sof buc {'capacity': 1}
+sof bel {'capacity': 1}
+
+bel pod {'capacity': 1}
+bel zag {'capacity': 1}
+
+tir pod {'capacity': 1}
+tir the {'capacity': 1}
+tir pod {'capacity': 1}
+
+zag luj {'capacity': 1}
+zag bud {'capacity': 1}
+
+bud buc {'capacity': 1}
+bud bra {'capacity': 1}
+
+vie bra {'capacity': 1}
+
+buc chi {'capacity': 1}
+
+chi kie {'capacity': 1}

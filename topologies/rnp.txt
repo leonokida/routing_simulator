@@ -1,0 +1,71 @@
+sao_paulo curitiba {'capacity': 100}
+sao_paulo porto_alegre {'capacity': 100}
+sao_paulo florianopolis {'capacity': 10}
+sao_paulo brasilia {'capacity': 20}
+sao_paulo belo_horizonte {'capacity': 10}
+sao_paulo rio_de_janeiro {'capacity': 200}
+sao_paulo fortaleza {'capacity': 200}
+
+curitiba porto_alegre {'capacity': 200}
+curitiba florianopolis {'capacity': 100}
+curitiba campo_grande {'capacity': 10}
+
+porto_alegre florianopolis {'capacity': 100}
+
+rio_de_janeiro brasilia {'capacity': 100}
+rio_de_janeiro belo_horizonte {'capacity': 20}
+rio_de_janeiro vitoria {'capacity': 10}
+
+belo_horizonte vitoria {'capacity': 10}
+belo_horizonte brasilia {'capacity': 10}
+belo_horizonte salvador {'capacity': 100}
+
+vitoria salvador {'capacity': 100}
+
+brasilia salvador {'capacity': 100}
+brasilia sao_luis {'capacity': 100}
+brasilia fortaleza {'capacity': 10}
+brasilia palmas {'capacity': 100}
+brasilia cuiaba {'capacity': 100}
+brasilia porto_velho {'capacity': 100}
+brasilia goiania {'capacity': 10}
+brasilia manaus {'capacity': 3}
+brasilia rio_branco {'capacity': 3}
+
+goiania palmas {'capacity': 10}
+goiania cuiaba {'capacity': 10}
+
+cuiaba campo_grande {'capacity': 100}
+cuiaba porto_velho {'capacity': 100}
+
+porto_velho rio_branco {'capacity': 3}
+
+palmas belem {'capacity': 100}
+
+salvador teresina {'capacity': 100}
+salvador fortaleza {'capacity': 100}
+salvador campina_grande {'capacity': 10}
+salvador aracaju {'capacity': 100}
+
+aracaju maceio {'capacity': 100}
+
+maceio recife {'capacity': 100}
+
+recife campina_grande {'capacity': 100}
+recife joao_pessoa {'capacity': 10}
+
+campina_grande joao_pessoa {'capacity': 10}
+campina_grande natal {'capacity': 100}
+
+fortaleza natal {'capacity': 100}
+fortaleza teresina {'capacity': 100}
+
+teresina sao_luis {'capacity': 100}
+
+sao_luis belem {'capacity': 10}
+
+macapa belem {'capacity': 100}
+macapa manaus {'capacity': 100}
+
+boa_vista manaus {'capacity': 1}
+boa_vista fortaleza {'capacity': 1}
