@@ -45,12 +45,13 @@ class Network:
                 f"topology_nodes={self.topology.number_of_nodes()}, "
                 f"topology_edges={self.topology.number_of_edges()})")
     
-    def pre_calculate_arborescences(self, connectivity_c: int = 2):
+    def pre_calculate_arborescences(self):
         """
         Pre-calculates c edge-disjoint arborescences rooted at each destination.
         For simplicity, this stores c shortest edge-disjoint paths (SEDPs) as
         a dictionary: {destination: {source: [next_hop_c1, next_hop_c2, ...]}}
         """
+        connectivity_c = nx.edge_connectivity(self.topology)
         arborescence_store = {}
 
         # Iterate over every possible destination d
