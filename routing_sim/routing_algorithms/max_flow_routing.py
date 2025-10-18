@@ -7,7 +7,7 @@ class MaxFlowRouting(RoutingAlgorithm):
         self.weight_mf = lambda_val
         self.weight_sp = (1 - lambda_val) * -1
 
-    def _get_shortest_path_length(source, dest, graph):
+    def _get_shortest_path_length(self, source, dest, graph):
         """Calculates the shortest path length using Dijkstra's algorithm (based on 'weight' attribute)."""
         if source == dest:
             return 0
@@ -17,7 +17,7 @@ class MaxFlowRouting(RoutingAlgorithm):
         except nx.NetworkXNoPath:
             return float('inf')
 
-    def _get_max_flow_value(source, dest, graph):
+    def _get_max_flow_value(self, source, dest, graph):
         """Calculates the maximum flow value (based on 'capacity' attribute)."""
         if source == dest:
             return float('inf')

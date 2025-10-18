@@ -1,7 +1,7 @@
 import networkx as nx
 from routing_sim.routing_algorithms.interface import RoutingAlgorithm
 
-class DijsktraRouing(RoutingAlgorithm):
+class DijsktraRouting(RoutingAlgorithm):
     def __init__(self):
         super().__init__("ShortestPath")
 
