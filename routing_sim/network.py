@@ -44,3 +44,45 @@ class Network:
         return (f"Network(routers={list(self.routers.keys())}, "
                 f"topology_nodes={self.topology.number_of_nodes()}, "
                 f"topology_edges={self.topology.number_of_edges()})")
+    
+    def pre_calculate_arborescences(self, connectivity_c: int = 2):
+        """
+        Pre-calculates c edge-disjoint arborescences rooted at each destination.
+        For simplicity, this stores c shortest edge-disjoint paths (SEDPs) as
+        a dictionary: {destination: {source: [next_hop_c1, next_hop_c2, ...]}}
+        """
+        arborescence_store = {}
+
+        # Iterate over every possible destination d
+        for d in self.topology.nodes:
+            d_arborescences = {}
+            # Iterate over every possible source s (which is every node except d)
+            for s in self.topology.nodes:
+                if s == d:
+                    continue
+
+                # Find the required number of edge-disjoint paths (SEDPs)
+                try:
+                    # Use NetworkX's flow capabilities to find edge-disjoint paths
+                    # nx.edge_disjoint_paths returns an iterator of paths
+                    paths_iterator = nx.edge_disjoint_paths(self.topology, s, d)
+                    
+                    # Take up to 'connectivity_c' paths
+                    disjoint_paths = list(paths_iterator)[:connectivity_c]
+                    
+                    # Extract the next hop for each path
+                    next_hops = []
+                    for path in disjoint_paths:
+                        if len(path) > 1:
+                            next_hops.append(path[1]) # The second node in the path is the next hop
+                    
+                    d_arborescences[s] = next_hops
+                    
+                except nx.NetworkXNoPath:
+                    # No path exists (shouldn't happen in a connected graph)
+                    d_arborescences[s] = []
+                
+            arborescence_store[d] = d_arborescences
+            
+        self.arborescence_store = arborescence_store # Store the computed structure
+        
