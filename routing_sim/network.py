@@ -1,60 +1,51 @@
+# The class that represents a Network of routers
+# Author: Leon Okida
+# Last modification: 10/19/2025
+
 import networkx as nx
 from routing_sim.router import Router
 from routing_sim.routing_algorithms.interface import RoutingAlgorithm
 
 class Network:
-    """Represents the entire network infrastructure."""
     def __init__(self):
         self.routers = {} 
         self.topology = nx.Graph()
 
-    def add_router(self, router_name, algorithm=None): # <-- ALLOW algorithm to be optional
-        """Adds a router and assigns an algorithm if provided."""
+    def add_router(self, router_name: str | int, algorithm: RoutingAlgorithm = None):
+        # Adds a router with a routing algorithm
         if router_name not in self.routers:
-            # We must pass the algorithm during Router creation
             new_router = Router(name=router_name, algorithm=algorithm)
             self.routers[router_name] = new_router
             self.topology.add_node(router_name)
-        # Update existing router's algorithm if a new one is passed
         elif algorithm is not None:
              self.routers[router_name].routing_algorithm = algorithm 
         return self.routers[router_name]
 
-    def add_link(self, router_a_name, router_b_name, weight=1, capacity=1):
-        # We call add_router without an algorithm here, letting it default to None
-        self.add_router(router_a_name)
-        self.add_router(router_b_name)
+    def add_link(self, router_a_name: str | int, router_b_name: str | int, weight: int = 1, capacity: int = 1):
+        # Adds a link between two routers
         self.topology.add_edge(router_a_name, router_b_name, weight=weight, capacity=capacity)
     
     @classmethod
-    def from_networkx_graph(cls, graph: nx.Graph, algorithm_instance):
-        """
-        Initializes a Network instance from an existing NetworkX graph and 
-        assigns the given algorithm to all routers.
-        """
+    def from_networkx_graph(cls, graph: nx.Graph, algorithm_instance: str | int):
+        # Initializes a network from a graph representing a topology
         new_network = cls() 
         
         for router_name in graph.nodes:
-            # Pass the algorithm instance to add_router
+            # Adds the router with the assigned routing algorithm
             new_network.add_router(router_name, algorithm_instance) 
             
         for u, v, data in graph.edges(data=True):
             weight = data.get('weight', 1) 
             capacity = data.get('capacity', 1) 
-            # Note: add_link will call add_router again, but the router already exists
             new_network.add_link(u, v, weight=weight, capacity=capacity)
             
         new_network.pre_calculate_arborescences()
         return new_network
 
     def pre_calculate_arborescences(self):
-        """
-        Pre-calculates c edge-disjoint arborescences rooted at each destination.
-        For simplicity, this stores c shortest edge-disjoint paths (SEDPs) as
-        a dictionary: {destination: {source: [next_hop_c1, next_hop_c2, ...]}}
-        """
+        # Computes the arborescence packing
         connectivity_c = nx.edge_connectivity(self.topology)
-        arborescence_store = {}
+        arborescence_packing = {}
 
         # Iterate over every possible destination d
         for d in self.topology.nodes:
@@ -85,6 +76,7 @@ class Network:
                     # No path exists (shouldn't happen in a connected graph)
                     d_arborescences[s] = []
                 
-            arborescence_store[d] = d_arborescences
+            arborescence_packing[d] = d_arborescences
             
-        self.arborescence_store = arborescence_store # Store the computed structure
+        self.arborescence_packing = arborescence_packing # Store the computed structure
+    

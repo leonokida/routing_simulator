@@ -1,13 +1,11 @@
+# The interface for classes that implement routing algorithms
+# Author: Leon Okida
+# Last modification: 10/19/2025
+
 from abc import ABC, abstractmethod
 import networkx as nx
 
 class RoutingAlgorithm(ABC):
-    """
-    Abstract Base Class (Interface) for all routing algorithms.
-    
-    A concrete implementation must define a method to calculate the 
-    best next hop from a source router to a destination.
-    """
     def __init__(self, name: str):
         self.name = name
         

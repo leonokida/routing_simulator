@@ -1,3 +1,7 @@
+# Tools for logging routing messages and calculating path metrics
+# Author: Leon Okida
+# Last modification: 10/19/2025
+
 import networkx as nx
 from routing_sim.packet import Packet
 
@@ -7,57 +11,48 @@ class RoutingMetrics:
         self.backtrack_counter = 0
         self.debug_print = debug_print
 
-    def log_forwarding(self, router_name, next_hop, reason="FORWARD"):
-        """Logs a standard packet hop."""
-        log_entry = f"[Router {router_name}] -> Forwarding to {next_hop}. Reason: {reason}"
+    def log_forwarding(self, router_name: str | int, next_hop: str | int):
+        # Logs a hop
+        log_entry = f"[Router {router_name}]: forwarding to {next_hop}."
         self.logs.append(log_entry)
         if self.debug_print:
             print(log_entry)
 
-    def log_failure(self, router_name, failed_next_hop):
-        """Logs a failure detection and attempt to reroute/switch options."""
-        log_entry = f"[Router {router_name}] !!! FAILURE/LOOP DETECTED: Next hop {failed_next_hop} is unavailable or visited. Trying next option."
+    def log_failure(self, router_name: str | int, failed_next_hop: str | int):
+        # Logs the impossibility of routing through a router
+        log_entry = f"[Router {router_name}]: routing through {failed_next_hop} failed. Trying next option."
         self.logs.append(log_entry)
         if self.debug_print:
             print(log_entry)
 
-    def log_backtrack(self, router_name, previous_router):
-        """Logs a backtrack event."""
+    def log_backtrack(self, router_name: str | int, previous_router: str | int):
+        # Logs a backtrack event
         self.backtrack_counter += 1
-        log_entry = f"[Router {router_name}] <<< BACKTRACK: All options depleted. Returning to {previous_router}."
-        self.logs.append(log_entry)
-        if self.debug_print:
-            print(log_entry)
+        if previous_router != "":
+            log_entry = f"[Router {router_name}]: BACKTRACK! All options depleted. Returning to {previous_router}."
+            self.logs.append(log_entry)
+            if self.debug_print:
+                print(log_entry)
 
-    def log_success(self, final_route):
-        """Logs the final route success."""
-        log_entry = f"ROUTE SUCCESS! Final Path: {final_route}"
+    def log_success(self, final_route: list):
+        # Logs the routing success
+        log_entry = f"ROUTING SUCCESSFUL! Final Route: {final_route}"
         self.logs.append(log_entry)
         if self.debug_print:
             print(log_entry)
     
-# --- Metric Computation (Implemented as static method for reusability) ---
-
     @staticmethod
-    def _get_number_of_paths_for_node(graph, source, dest):
-        """
-        Uses max flow (min-cut) to estimate the number of alternate edge-disjoint 
-        paths between source and dest.
-        """
+    def _get_number_of_paths_for_node(graph: nx.Graph, source: str | int, dest: str | int):
+        # Computes the number of paths from source to dest
         try:
-            # Assumes 'capacity' is set to 1 for all edges for path counting
             return nx.maximum_flow_value(graph, source, dest, capacity='capacity')
         except nx.NetworkXNoPath:
             return 0
         except Exception:
-             # Handle complex flow errors by returning 0
             return 0
 
-
     def compute_final_metrics(self, packet: Packet, global_topology: nx.Graph):
-        """
-        Computes and prints final metrics for the successful route.
-        """
+        # Computes and prints final metrics for the successful route.
         route = packet.path
         if not route or route[-1] != packet.destination:
             print("\n--- Metrics Skipped: Routing failed or incomplete ---")
@@ -96,9 +91,10 @@ class RoutingMetrics:
                 total_alternate_paths += alternate_paths
             
             avg_alternate_paths = total_alternate_paths / len(nodes_to_check)
-            print(f"3. Avg. Alternate Paths (Max Flow): {avg_alternate_paths:.3f}")
+            print(f"3. Avg. Alternate Routes: {avg_alternate_paths:.3f}")
         else:
-            print("3. Avg. Alternate Paths: N/A (Route too short)")
+            print("3. Avg. Alternate Routes: N/A (Route too short)")
         
         print(f"Backtracks Performed: {self.backtrack_counter}")
         print("="*40)
+        
