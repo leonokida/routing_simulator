@@ -23,7 +23,8 @@ if __name__ == '__main__':
 
     # --- Step 2: Define and Select Routing Algorithm ---
     # Using the complex MultiCriteria logic (MaxFlow + ShortestPath)
-    ALGORITHM = MaxFlowRouting(lambda_val=LAMBDA_VALUE)
+    ALGORITHM = ArborescenceRouting()
+    ALGORITHM.compute_arborescence_packing(nx_graph)
     print(f"Algorithm Selected: {ALGORITHM.name} (λ={LAMBDA_VALUE})")
 
     # --- Step 3 & 4: Create Network and Assign Algorithm ---

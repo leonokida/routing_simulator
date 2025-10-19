@@ -39,44 +39,5 @@ class Network:
             capacity = data.get('capacity', 1) 
             new_network.add_link(u, v, weight=weight, capacity=capacity)
             
-        new_network.pre_calculate_arborescences()
         return new_network
-
-    def pre_calculate_arborescences(self):
-        # Computes the arborescence packing
-        connectivity_c = nx.edge_connectivity(self.topology)
-        arborescence_packing = {}
-
-        # Iterate over every possible destination d
-        for d in self.topology.nodes:
-            d_arborescences = {}
-            # Iterate over every possible source s (which is every node except d)
-            for s in self.topology.nodes:
-                if s == d:
-                    continue
-
-                # Find the required number of edge-disjoint paths (SEDPs)
-                try:
-                    # Use NetworkX's flow capabilities to find edge-disjoint paths
-                    # nx.edge_disjoint_paths returns an iterator of paths
-                    paths_iterator = nx.edge_disjoint_paths(self.topology, s, d)
-                    
-                    # Take up to 'connectivity_c' paths
-                    disjoint_paths = list(paths_iterator)[:connectivity_c]
-                    
-                    # Extract the next hop for each path
-                    next_hops = []
-                    for path in disjoint_paths:
-                        if len(path) > 1:
-                            next_hops.append(path[1]) # The second node in the path is the next hop
-                    
-                    d_arborescences[s] = next_hops
-                    
-                except nx.NetworkXNoPath:
-                    # No path exists (shouldn't happen in a connected graph)
-                    d_arborescences[s] = []
-                
-            arborescence_packing[d] = d_arborescences
-            
-        self.arborescence_packing = arborescence_packing # Store the computed structure
     
