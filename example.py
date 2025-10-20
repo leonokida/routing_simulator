@@ -22,10 +22,10 @@ if __name__ == '__main__':
     print("Topology Nodes:", list(nx_graph.nodes))
 
     # --- Step 2: Define and Select Routing Algorithm ---
-    ALGORITHM = MaxFlowRouting(LAMBDA_VALUE)
+    ALGORITHM = ArborescenceRouting()
 
     # Uncomment line below to use Arborescence Routing
-    #ALGORITHM.compute_arborescence_packing(nx_graph)
+    ALGORITHM.compute_arborescence_packing(nx_graph)
 
     print(f"Algorithm Selected: {ALGORITHM.name}")
     if ALGORITHM.name == "MaxFlowRouting":

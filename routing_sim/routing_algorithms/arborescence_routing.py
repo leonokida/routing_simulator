@@ -1,6 +1,6 @@
 # The arborecence-based routing algorithm, using a precomputed arborescence packing
 # Author: Leon Okida
-# Last modification: 10/19/2025
+# Last modification: 10/20/2025
 
 import networkx as nx
 from routing_sim.routing_algorithms.interface import RoutingAlgorithm
