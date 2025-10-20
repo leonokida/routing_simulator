@@ -15,21 +15,24 @@ if __name__ == '__main__':
     # --- Configuration ---
     SOURCE = 'curitiba'
     DESTINATION = 'vitoria'
-    LAMBDA_VALUE = 0.8  # Balanced weights (0.5 MF, -0.5 SP)
+    LAMBDA_VALUE = 0.8
     
     # --- Step 1: Create Topology (Graph) ---
     nx_graph = create_example_graph()
     print("Topology Nodes:", list(nx_graph.nodes))
 
     # --- Step 2: Define and Select Routing Algorithm ---
-    # Using the complex MultiCriteria logic (MaxFlow + ShortestPath)
-    ALGORITHM = ArborescenceRouting()
-    ALGORITHM.compute_arborescence_packing(nx_graph)
-    print(f"Algorithm Selected: {ALGORITHM.name} (λ={LAMBDA_VALUE})")
+    ALGORITHM = MaxFlowRouting(LAMBDA_VALUE)
+
+    # Uncomment line below to use Arborescence Routing
+    #ALGORITHM.compute_arborescence_packing(nx_graph)
+
+    print(f"Algorithm Selected: {ALGORITHM.name}")
+    if ALGORITHM.name == "MaxFlowRouting":
+        print("Lambda:", LAMBDA_VALUE)
 
     # --- Step 3 & 4: Create Network and Assign Algorithm ---
     network = Network.from_networkx_graph(nx_graph, ALGORITHM)
-    #ALGORITHM.add_arborescence_packing(network.arborescence_packing)
     network.from_networkx_graph(nx_graph, ALGORITHM)
     print("Network Initialization Complete.")
 

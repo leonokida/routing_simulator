@@ -26,10 +26,8 @@ class ArborescenceRouting(RoutingAlgorithm):
                 # Find the required number of edge-disjoint paths (SEDPs)
                 try:
                     # Use NetworkX's flow capabilities to find edge-disjoint paths
-                    # nx.edge_disjoint_paths returns an iterator of paths
                     paths_iterator = nx.edge_disjoint_paths(topology, s, d)
                     
-                    # Take up to 'connectivity_c' paths
                     disjoint_paths = list(paths_iterator)[:connectivity_c]
                     
                     # Extract the next hop for each path
