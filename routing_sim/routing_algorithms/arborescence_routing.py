@@ -35,12 +35,12 @@ class ArborescenceRouting(RoutingAlgorithm):
         for edge in used_edges:
             aux.remove_edge(*edge)
 
-        for i in range(j, c):
+        for i in range(j + 1, c):
             intermediate = f"condition_4_i_{i}"
             aux.add_edge(tail, intermediate, capacity=1)
             aux.add_edge(intermediate, r, capacity=1)
 
-        return nx.algorithms.maximum_flow_value(aux, tail, head, flow_func=nx.algorithms.flow.edmonds_karp) >= c - j
+        return nx.algorithms.maximum_flow_value(aux, tail, head, flow_func=nx.algorithms.flow.edmonds_karp) >= c - j + 1
 
     def _compute_rooted_arborescences(self, r: str | int, c: int, topology: nx.Graph) -> list[nx.DiGraph]:
         # Uses the Tarjan algorithm to generate c r-rooted arborescences
@@ -74,6 +74,7 @@ class ArborescenceRouting(RoutingAlgorithm):
                         # Checks if it's possible to add the edge to the arborescence
                         if self._condition_4(r, u, v, c, j, topology_digraph, used_edges):
                             arbo.add_edge(u, v)
+                            used_edges.add((u, v))
                             progress = True
                             break
 
@@ -81,7 +82,6 @@ class ArborescenceRouting(RoutingAlgorithm):
                     raise Exception(f"The algorithm stagnated while building the #{j} {r}-rooted arborescence")
 
             # Updates the used edges set
-            used_edges.update(arbo.edges())
             arborescences.append(arbo)
             print(f"Created #{j} {r}-rooted arborescence")
         
@@ -90,6 +90,7 @@ class ArborescenceRouting(RoutingAlgorithm):
     def compute_arborescence_packing(self, topology: nx.Graph) -> None:
         # Computes the arborescence packing
         connectivity_c = nx.edge_connectivity(topology)
+        print(f"The edge-connectivity of the topology is {connectivity_c}")
 
         # Iterate over every possible destination d
         for d in topology.nodes:
