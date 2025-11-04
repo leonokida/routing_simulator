@@ -8,13 +8,13 @@ from routing_sim.topology_generation import read_graph
 
 def create_example_graph():
     """Creates a graph designed to force FRR and test the routing criteria."""
-    G = read_graph("topologies/rnp_equal.txt")
+    G = read_graph("topologies/internet2.txt")
     return G
 
 if __name__ == '__main__':
     # --- Configuration ---
-    SOURCE = 'curitiba'
-    DESTINATION = 'vitoria'
+    SOURCE = 'baltimore'
+    DESTINATION = 'sacramento'
     LAMBDA_VALUE = 0.8
     
     # --- Step 1: Create Topology (Graph) ---
