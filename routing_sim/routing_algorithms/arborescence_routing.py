@@ -81,7 +81,9 @@ class ArborescenceRouting(RoutingAlgorithm):
                 if not progress:
                     raise Exception(f"The algorithm stagnated while building the #{j} {r}-rooted arborescence")
 
-            # Updates the used edges set
+            if not nx.is_arborescence(arbo):
+                raise Exception(f"Failed to create a true #{j} {r}-rooted arborescence")
+
             arborescences.append(arbo)
             print(f"Created #{j} {r}-rooted arborescence")
         

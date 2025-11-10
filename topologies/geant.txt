@@ -81,7 +81,6 @@ bel zag {'capacity': 1}
 
 tir pod {'capacity': 1}
 tir the {'capacity': 1}
-tir pod {'capacity': 1}
 
 zag luj {'capacity': 1}
 zag bud {'capacity': 1}
