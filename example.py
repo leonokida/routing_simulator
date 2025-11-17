@@ -7,14 +7,13 @@ from routing_sim.simulation_engine import SimulationEngine
 from routing_sim.topology_generation import read_graph
 
 def create_example_graph():
-    """Creates a graph designed to force FRR and test the routing criteria."""
-    G = read_graph("topologies/internet2.txt")
+    G = read_graph("topologies/article_graph.txt")
     return G
 
 if __name__ == '__main__':
     # --- Configuration ---
-    SOURCE = 'baltimore'
-    DESTINATION = 'sacramento'
+    SOURCE = 1
+    DESTINATION = 2
     LAMBDA_VALUE = 0.8
     
     # --- Step 1: Create Topology (Graph) ---
