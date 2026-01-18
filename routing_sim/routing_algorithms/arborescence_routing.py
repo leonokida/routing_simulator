@@ -1,6 +1,6 @@
 # The arborecence-based routing algorithm, using a precomputed arborescence packing
 # Author: Leon Okida
-# Last modification: 11/03/2025
+# Last modification: 01/17/2026
 
 import networkx as nx
 from routing_sim.routing_algorithms.interface import RoutingAlgorithm
@@ -58,33 +58,30 @@ class ArborescenceRouting(RoutingAlgorithm):
         for j in range(1, c + 1):
             arbo = nx.DiGraph()
             arbo.add_node(r)
+            candidate_edges = set(topology_digraph.out_edges(r)) - used_edges
 
-            usable_edges = set(topology_digraph.edges()) - used_edges
+            while len(arbo) < len(topology_digraph):
+                # Iterates over candidate edges
+                iteratable_candidate_edges = sorted(candidate_edges)
+                for u, v in iteratable_candidate_edges:
+                    # Removes it from usable edges
+                    candidate_edges.remove((u, v))
+                    
+                    # Continues if it's not a valid candidate e*
+                    if v in arbo:
+                        continue
 
-            while set(arbo.nodes()) != set(topology_digraph.nodes()):
-                progress = False
-
-                # Iterates over usable edges
-                for u, v in sorted(usable_edges):
-                    # Finds candidate e*
-                    if u in arbo and v not in arbo:
-                        # Removes from usable edges
-                        usable_edges.remove((u, v))
-
-                        # Checks if it's possible to add the edge to the arborescence
-                        if self._condition_4(r, u, v, c, j, topology_digraph, used_edges):
-                            arbo.add_edge(u, v)
-                            used_edges.add((u, v))
-                            progress = True
-                            break
-
-                if not progress:
-                    raise Exception(f"The algorithm stagnated while building the #{j} {r}-rooted arborescence")
+                    # Checks if it's possible to add the edge to the arborescence
+                    if self._condition_4(r, u, v, c, j, topology_digraph, used_edges):
+                        arbo.add_edge(u, v)
+                        used_edges.add((u, v))
+                        candidate_edges.update(set(topology_digraph.out_edges(v)))
+                        break
 
             if not nx.is_arborescence(arbo):
                 raise Exception(f"Failed to create a true #{j} {r}-rooted arborescence")
 
-            arborescences.append(arbo)
+            arborescences.append(arbo.reverse())
             print(f"Created #{j} {r}-rooted arborescence")
         
         return arborescences
@@ -104,8 +101,8 @@ class ArborescenceRouting(RoutingAlgorithm):
         if dest not in self.arborescence_packing:
             return None, float('-inf')
 
-        # Returns the predecessor of source in the arborescence corresponding to dest (it's the next hop in the path to dest)
-        for next_hop in self.arborescence_packing[dest][self.arborescence_index].predecessors(source):
+        # Returns the successor of source in the arborescence corresponding to dest (it's the next hop in the path to dest)
+        for next_hop in self.arborescence_packing[dest][self.arborescence_index].successors(source):
             return next_hop, 1
 
         return None, float('-inf')

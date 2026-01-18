@@ -4,16 +4,16 @@ from routing_sim.routing_algorithms.dijkstra_routing import DijsktraRouting
 from routing_sim.routing_algorithms.arborescence_routing import ArborescenceRouting
 from routing_sim.network import Network
 from routing_sim.simulation_engine import SimulationEngine
-from routing_sim.topology_generation import read_graph
+from routing_sim.topology_generation import read_graph, random_graph
 
 def create_example_graph():
-    G = read_graph("topologies/article_graph.txt")
+    G = random_graph(50, 0.5)
     return G
 
 if __name__ == '__main__':
     # --- Configuration ---
     SOURCE = 1
-    DESTINATION = 2
+    DESTINATION = 9
     LAMBDA_VALUE = 0.8
     
     # --- Step 1: Create Topology (Graph) ---
