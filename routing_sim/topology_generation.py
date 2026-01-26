@@ -1,8 +1,7 @@
 # Tools to generate/read topologies
 # Author: Leon Okida
-# Last modification: 10/19/2025
+# Last modification: 10/26/2025
 import networkx as nx
-import random
 
 def _set_default_attributes(graph: nx.Graph) -> nx.Graph:
     # Sets default capacity and weight attributes for all edges in the graph

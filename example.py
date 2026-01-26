@@ -7,7 +7,7 @@ from routing_sim.simulation_engine import SimulationEngine
 from routing_sim.topology_generation import read_graph, random_graph
 
 def create_example_graph():
-    G = random_graph(50, 0.5)
+    G = random_graph(15, 0.5)
     return G
 
 if __name__ == '__main__':
@@ -31,15 +31,14 @@ if __name__ == '__main__':
         print("Lambda:", LAMBDA_VALUE)
 
     # --- Step 3 & 4: Create Network and Assign Algorithm ---
-    network = Network.from_networkx_graph(nx_graph, ALGORITHM)
-    network.from_networkx_graph(nx_graph, ALGORITHM)
+    network = Network.from_networkx_graph(nx_graph)
     print("Network Initialization Complete.")
 
     # --- Step 5 & 6: Instantiate and Run Simulation Engine ---
     engine = SimulationEngine(network, debug_print=True)
     
     # Run the simulation (Start: A, Destination: F)
-    success, route = engine.simulate_routing(SOURCE, DESTINATION)
+    success, route = engine.simulate_routing(SOURCE, DESTINATION, ALGORITHM)
     
     if success:
         print("\n--- Final Route Found ---")
