@@ -1,6 +1,6 @@
 # The arborecence-based routing algorithm, using a precomputed arborescence packing
 # Author: Leon Okida
-# Last modification: 01/26/2026
+# Last modification: 01/27/2026
 
 import networkx as nx
 from routing_sim.routing_algorithms.interface import RoutingAlgorithm
@@ -101,13 +101,10 @@ class ArborescenceRouting(RoutingAlgorithm):
     def switch_arborescence(self) -> None:
         self.arborescence_index = (self.arborescence_index + 1) % self.number_of_arborescences
 
-    def calculate_next_hop(self, source: str | int, dest: str | int, global_topology: nx.Graph, visited_names: set) -> str | int:      
+    def calculate_next_hop(self, source: str | int, dest: str | int, global_topology: nx.Graph, visited_names: set) -> list:      
         # Calculates the next hop based on the arborescences
         if dest not in self.arborescence_packing:
             return None
 
         # Returns the successor of source in the arborescence corresponding to dest (it's the next hop in the path to dest)
-        for next_hop in self.arborescence_packing[dest][self.arborescence_index].successors(source):
-            return next_hop
-
-        return None
+        return self.arborescence_packing[dest][self.arborescence_index].successors(source)
