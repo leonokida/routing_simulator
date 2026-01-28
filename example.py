@@ -3,7 +3,8 @@ from routing_sim.routing_algorithms.max_flow_routing import MaxFlowRouting
 from routing_sim.routing_algorithms.dijkstra_routing import DijsktraRouting
 from routing_sim.routing_algorithms.arborescence_routing import ArborescenceRouting
 from routing_sim.network import Network
-from routing_sim.simulation_engine import SimulationEngine
+from routing_sim.simulation_engine.frr_simulation_engine import FRRSimulationEngine
+from routing_sim.simulation_engine.arborescence_simulation_engine import ArborescenceSimulationEngine
 from routing_sim.topology_generation import read_graph, random_graph
 
 def create_example_graph():
@@ -21,10 +22,10 @@ if __name__ == '__main__':
     print("Topology Nodes:", list(nx_graph.nodes))
 
     # --- Step 2: Define and Select Routing Algorithm ---
-    ALGORITHM = ArborescenceRouting()
+    ALGORITHM = MaxFlowRouting(0.8)
 
     # Uncomment line below to use Arborescence Routing
-    ALGORITHM.compute_arborescence_packing(nx_graph)
+    # ALGORITHM.compute_arborescence_packing(nx_graph)
 
     print(f"Algorithm Selected: {ALGORITHM.name}")
     if ALGORITHM.name == "MaxFlowRouting":
@@ -35,9 +36,9 @@ if __name__ == '__main__':
     print("Network Initialization Complete.")
 
     # --- Step 5 & 6: Instantiate and Run Simulation Engine ---
-    engine = SimulationEngine(network, debug_print=True)
+    engine = FRRSimulationEngine(network, debug_print=True)
     
-    # Run the simulation (Start: A, Destination: F)
+    # Run the simulation
     success, route = engine.simulate_routing(SOURCE, DESTINATION, ALGORITHM)
     
     if success:

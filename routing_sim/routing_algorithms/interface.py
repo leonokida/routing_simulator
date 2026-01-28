@@ -1,6 +1,6 @@
 # The interface for classes that implement routing algorithms
 # Author: Leon Okida
-# Last modification: 10/26/2025
+# Last modification: 10/27/2025
 
 from abc import ABC, abstractmethod
 import networkx as nx
@@ -10,5 +10,9 @@ class RoutingAlgorithm(ABC):
         self.name = name
         
     @abstractmethod
-    def calculate_next_hop(self, source: str | int, dest: str | int, global_topology: nx.Graph, visited_names: set) -> str | int:
+    def calculate_next_hop(self, source: str | int, dest: str | int, global_topology: nx.Graph, visited_names: set) -> list:
+        ...
+
+    @abstractmethod
+    def switch_arborescence(self) -> None:
         ...

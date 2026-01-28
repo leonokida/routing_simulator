@@ -1,15 +1,17 @@
-# Simulates routing between two routers in a network
+# Simulates routing between two routers in a network using Arborescences
 # Author: Leon Okida
-# Last modification: 10/26/2025
+# Last modification: 10/27/2025
 
+from routing_sim.simulation_engine.interface import SimulationEngine
 from routing_sim.network import Network
 from routing_sim.router import Router
 from routing_sim.packet import Packet
 from routing_sim.metrics import RoutingMetrics
 from routing_sim.routing_algorithms.interface import RoutingAlgorithm
 
-class SimulationEngine:
+class ArborescenceSimulationEngine(SimulationEngine):
     def __init__(self, network: Network, debug_print: bool = True):
+        self.failed_edges = set()
         self.network = network
         self.metrics = RoutingMetrics(debug_print=debug_print)
         
@@ -35,26 +37,26 @@ class SimulationEngine:
                 packet=packet,
                 global_topology=self.network.topology,
                 routing_algorithm=algorithm
-            )
+            )[0]
 
-            # If no next hop is available, it backtracks
-            if next_hop is None:
-                parent_router = packet.path[-2] if len(packet.path) > 1 else ""
-                self.metrics.log_backtrack(source_router_name, parent_router)                
-                packet.record_backtracking_hop()
-                return False
+            # Failure detected on the link to the next hop
+            # Tries routing on the next arborescence
+            if ((source_router_name, next_hop) in self.failed_edges):
+                self.metrics.log_failure(source_router_name, next_hop)
+                algorithm.switch_arborescence()
+                continue
 
             # Next hop is found, the packet is forwarded
             self.metrics.log_forwarding(source_router_name, next_hop)
             success = self._find_route_recursive(packet, next_hop, algorithm)
 
-            # Returns successful routing or tries the next option
+            # Returns successful routing or failure
             if success:
                 return True
             else:
-                self.metrics.log_failure(source_router_name, next_hop)
+                return False
 
-    def simulate_routing(self, source: str | int, dest: str | int, algorithm: RoutingAlgorithm):
+    def simulate_routing(self, source: str | int, dest: str | int, algorithm: RoutingAlgorithm) -> tuple:
         # Initiates the routing simulation
         if source not in self.network.routers or dest not in self.network.routers:
             print("Error: Source or destination not found in network.")
@@ -70,3 +72,8 @@ class SimulationEngine:
         self.metrics.compute_final_metrics(packet, self.network.topology)
         
         return success, packet.path
+
+    def add_edge_failure(self, edge: tuple) -> None:
+        u, v = edge
+        self.failed_edges.add((u, v))
+        self.failed_edges.add((v, u))
