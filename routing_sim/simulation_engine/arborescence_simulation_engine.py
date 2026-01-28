@@ -9,7 +9,7 @@ from routing_sim.packet import Packet
 from routing_sim.metrics import RoutingMetrics
 from routing_sim.routing_algorithms.interface import RoutingAlgorithm
 
-class FRRSimulationEngine(SimulationEngine):
+class ArborescenceSimulationEngine(SimulationEngine):
     def __init__(self, network: Network, debug_print: bool = True):
         self.failed_edges = set()
         self.network = network

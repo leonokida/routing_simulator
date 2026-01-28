@@ -107,4 +107,7 @@ class ArborescenceRouting(RoutingAlgorithm):
             return None
 
         # Returns the successor of source in the arborescence corresponding to dest (it's the next hop in the path to dest)
-        return self.arborescence_packing[dest][self.arborescence_index].successors(source)
+        for next_hop in self.arborescence_packing[dest][self.arborescence_index].successors(source):
+            return [next_hop]
+
+        return None
