@@ -5,12 +5,12 @@
 from abc import ABC, abstractmethod
 from routing_sim.routing_algorithms.interface import RoutingAlgorithm
 
-
 class SimulationEngine(ABC):
-    failed_edges = set()
+    def __init__(self):
+        self.failed_edges = set()
 
     @abstractmethod
-    def simulate_routing(self, source: str | int, dest: str | int, algorithm: RoutingAlgorithm) -> tuple:
+    def simulate_routing(self, source: str | int, dest: str | int, algorithm: RoutingAlgorithm, experiment_name: str, file_path: str) -> tuple:
         ...
     
     @abstractmethod

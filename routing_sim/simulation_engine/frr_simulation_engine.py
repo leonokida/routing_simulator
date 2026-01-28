@@ -11,7 +11,7 @@ from routing_sim.routing_algorithms.interface import RoutingAlgorithm
 
 class FRRSimulationEngine(SimulationEngine):
     def __init__(self, network: Network, debug_print: bool = True):
-        self.failed_edges = set()
+        super().__init__()
         self.network = network
         self.metrics = RoutingMetrics(debug_print=debug_print)
         
@@ -66,7 +66,7 @@ class FRRSimulationEngine(SimulationEngine):
                 self.metrics.log_failure(source_router_name, next_hop)
                 next_hop_candidates += 1
 
-    def simulate_routing(self, source: str | int, dest: str | int, algorithm: RoutingAlgorithm) -> tuple:
+    def simulate_routing(self, source: str | int, dest: str | int, algorithm: RoutingAlgorithm, experiment_name: str, file_path: str) -> tuple:
         # Initiates the routing simulation
         if source not in self.network.routers or dest not in self.network.routers:
             print("Error: Source or destination not found in network.")
@@ -80,6 +80,13 @@ class FRRSimulationEngine(SimulationEngine):
 
         # Computes route metrics
         self.metrics.compute_final_metrics(packet, self.network.topology)
+        self.metrics.save_metrics_to_csv(
+            file_path=file_path,
+            experiment_name=experiment_name,
+            algorithm=algorithm,
+            packet=packet,
+            global_topology=self.network.topology
+        )
         
         return success, packet.path
 

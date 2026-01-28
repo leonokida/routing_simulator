@@ -39,7 +39,7 @@ if __name__ == '__main__':
     engine = FRRSimulationEngine(network, debug_print=True)
     
     # Run the simulation
-    success, route = engine.simulate_routing(SOURCE, DESTINATION, ALGORITHM)
+    success, route = engine.simulate_routing(SOURCE, DESTINATION, ALGORITHM, "teste", "teste.csv")
     
     if success:
         print("\n--- Final Route Found ---")

@@ -1,9 +1,12 @@
 # Tools for logging routing messages and calculating path metrics
 # Author: Leon Okida
-# Last modification: 10/19/2025
+# Last modification: 01/27/2025
 
 import networkx as nx
 from routing_sim.packet import Packet
+from routing_sim.routing_algorithms.interface import RoutingAlgorithm
+import os
+import csv
 
 class RoutingMetrics:
     def __init__(self, debug_print: bool = True):
@@ -98,3 +101,60 @@ class RoutingMetrics:
         print(f"Backtracks Performed: {self.backtrack_counter}")
         print("="*40)
         
+    def save_metrics_to_csv(self, file_path: str, experiment_name: str, algorithm: RoutingAlgorithm, packet: Packet, global_topology: nx.Graph):
+        """
+        Computes metrics and saves them to a CSV file, including an experiment identifier.
+        """
+        route = packet.path
+        if not route or route[-1] != packet.destination:
+            return
+
+        # 1. Metric Calculations
+        route_length = len(route) - 1
+        total_degree = sum(global_topology.degree(node) for node in route)
+        
+        # Calculate Average Alternate Routes (disjoint paths to destination)
+        dest = route[-1]
+        temp_graph = global_topology.copy()
+        for i in range(len(route) - 1):
+            u, v = route[i], route[i+1]
+            if temp_graph.has_edge(u, v):
+                temp_graph.remove_edge(u, v)
+
+        total_alternate_paths = 0
+        nodes_to_check = route[1:-1]
+        avg_alternate_paths = 0
+        if nodes_to_check:
+            for node in nodes_to_check:
+                # Using the existing helper method
+                total_alternate_paths += self._get_number_of_paths_for_node(temp_graph, node, dest)
+            avg_alternate_paths = total_alternate_paths / len(nodes_to_check)
+
+        # 2. CSV Configuration
+        headers = [
+            "Experiment_Name",
+            "Algorithm", 
+            "Route_Length", 
+            "Total_Degree", 
+            "Avg_Alternate_Routes", 
+            "Backtracks"
+        ]
+        
+        row = {
+            "Experiment_Name": experiment_name,
+            "Algorithm": algorithm.name,
+            "Route_Length": route_length,
+            "Total_Degree": total_degree,
+            "Avg_Alternate_Routes": round(avg_alternate_paths, 3),
+            "Backtracks": self.backtrack_counter
+        }
+
+        # 3. File Writing Logic
+        # Check if file exists and has content to determine if headers are needed
+        file_exists = os.path.isfile(file_path) and os.path.getsize(file_path) > 0
+
+        with open(file_path, mode='a', newline='', encoding='utf-8') as f:
+            writer = csv.DictWriter(f, fieldnames=headers)
+            if not file_exists:
+                writer.writeheader()
+            writer.writerow(row)
