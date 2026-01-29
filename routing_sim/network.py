@@ -1,6 +1,6 @@
 # The class that represents a Network of routers
 # Author: Leon Okida
-# Last modification: 10/26/2025
+# Last modification: 01/26/2026
 
 import networkx as nx
 from routing_sim.router import Router

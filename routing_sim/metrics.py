@@ -1,6 +1,6 @@
 # Tools for logging routing messages and calculating path metrics
 # Author: Leon Okida
-# Last modification: 01/27/2025
+# Last modification: 01/27/2026
 
 import networkx as nx
 from routing_sim.packet import Packet

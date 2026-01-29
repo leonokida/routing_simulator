@@ -1,6 +1,6 @@
 # Interface of code that simulates routing between two routers in a network
 # Author: Leon Okida
-# Last modification: 10/27/2025
+# Last modification: 01/27/2026
 
 from abc import ABC, abstractmethod
 from routing_sim.routing_algorithms.interface import RoutingAlgorithm

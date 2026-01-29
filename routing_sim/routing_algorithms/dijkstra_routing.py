@@ -1,6 +1,6 @@
 # The routing algorithm based on Dijkstra's algorithm
 # Author: Leon Okida
-# Last modification: 10/27/2025
+# Last modification: 01/27/2026
 
 import networkx as nx
 from routing_sim.routing_algorithms.interface import RoutingAlgorithm

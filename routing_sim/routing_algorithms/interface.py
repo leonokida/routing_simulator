@@ -1,6 +1,6 @@
 # The interface for classes that implement routing algorithms
 # Author: Leon Okida
-# Last modification: 10/27/2025
+# Last modification: 01/27/2026
 
 from abc import ABC, abstractmethod
 import networkx as nx

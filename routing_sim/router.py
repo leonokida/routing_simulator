@@ -1,6 +1,6 @@
 # The class that represents a Router
 # Author: Leon Okida
-# Last modification: 10/26/2025
+# Last modification: 01/26/2026
 
 from routing_sim.packet import Packet
 from routing_sim.routing_algorithms.interface import RoutingAlgorithm 

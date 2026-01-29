@@ -1,5 +1,6 @@
 import networkx as nx
 from routing_sim.routing_algorithms.max_flow_routing import MaxFlowRouting
+from routing_sim.routing_algorithms.probabilistic_max_flow_routing import ProbabilisticMaxFlowRouting
 from routing_sim.routing_algorithms.dijkstra_routing import DijsktraRouting
 from routing_sim.routing_algorithms.arborescence_routing import ArborescenceRouting
 from routing_sim.network import Network
@@ -22,14 +23,12 @@ if __name__ == '__main__':
     print("Topology Nodes:", list(nx_graph.nodes))
 
     # --- Step 2: Define and Select Routing Algorithm ---
-    ALGORITHM = MaxFlowRouting(0.8)
+    ALGORITHM = ProbabilisticMaxFlowRouting()
 
     # Uncomment line below to use Arborescence Routing
     # ALGORITHM.compute_arborescence_packing(nx_graph)
 
     print(f"Algorithm Selected: {ALGORITHM.name}")
-    if ALGORITHM.name == "MaxFlowRouting":
-        print("Lambda:", LAMBDA_VALUE)
 
     # --- Step 3 & 4: Create Network and Assign Algorithm ---
     network = Network.from_networkx_graph(nx_graph)
