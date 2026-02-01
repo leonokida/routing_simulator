@@ -1,6 +1,6 @@
 # Simulates routing between two routers in a network using FRR
 # Author: Leon Okida
-# Last modification: 01/27/2026
+# Last modification: 02/01/2026
 
 from routing_sim.simulation_engine.interface import SimulationEngine
 from routing_sim.network import Network
@@ -52,7 +52,7 @@ class FRRSimulationEngine(SimulationEngine):
             # Failure detected on the link to the next hop
             if ((source_router_name, next_hop) in self.failed_edges):
                 self.metrics.log_failure(source_router_name, next_hop)
-                next_hop_candidates += 1
+                candidate_index += 1
                 continue
 
             # Next hop is found, the packet is forwarded
@@ -64,7 +64,7 @@ class FRRSimulationEngine(SimulationEngine):
                 return True
             else:
                 self.metrics.log_failure(source_router_name, next_hop)
-                next_hop_candidates += 1
+                candidate_index += 1
 
     def simulate_routing(self, source: str | int, dest: str | int, algorithm: RoutingAlgorithm, experiment_name: str, file_path: str) -> tuple:
         # Initiates the routing simulation
@@ -94,3 +94,6 @@ class FRRSimulationEngine(SimulationEngine):
         u, v = edge
         self.failed_edges.add((u, v))
         self.failed_edges.add((v, u))
+
+    def clean_edge_failures(self) -> None:
+        self.failed_edges.clear()

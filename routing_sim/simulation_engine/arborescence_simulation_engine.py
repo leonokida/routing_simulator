@@ -59,7 +59,7 @@ class ArborescenceSimulationEngine(SimulationEngine):
     def simulate_routing(self, source: str | int, dest: str | int, algorithm: RoutingAlgorithm, experiment_name: str, file_path: str) -> tuple:
         # Initiates the routing simulation
         if source not in self.network.routers or dest not in self.network.routers:
-            print("Error: Source or destination not found in network.")
+            print(f"Error: Source {source} or destination {dest} not found in network.")
             return
 
         # Initializes the packet
@@ -84,3 +84,6 @@ class ArborescenceSimulationEngine(SimulationEngine):
         u, v = edge
         self.failed_edges.add((u, v))
         self.failed_edges.add((v, u))
+
+    def clean_edge_failures(self) -> None:
+        self.failed_edges.clear()

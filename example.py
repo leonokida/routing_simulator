@@ -9,13 +9,13 @@ from routing_sim.simulation_engine.arborescence_simulation_engine import Arbores
 from routing_sim.topology_generation import read_graph, random_graph
 
 def create_example_graph():
-    G = random_graph(15, 0.5)
+    G = read_graph('topologies/geant.txt')
     return G
 
 if __name__ == '__main__':
     # --- Configuration ---
-    SOURCE = 1
-    DESTINATION = 9
+    SOURCE = 'lis'
+    DESTINATION = 'par'
     LAMBDA_VALUE = 0.8
     
     # --- Step 1: Create Topology (Graph) ---
@@ -23,7 +23,7 @@ if __name__ == '__main__':
     print("Topology Nodes:", list(nx_graph.nodes))
 
     # --- Step 2: Define and Select Routing Algorithm ---
-    ALGORITHM = ProbabilisticMaxFlowRouting()
+    ALGORITHM = ArborescenceRouting()
 
     # Uncomment line below to use Arborescence Routing
     # ALGORITHM.compute_arborescence_packing(nx_graph)
@@ -32,10 +32,12 @@ if __name__ == '__main__':
 
     # --- Step 3 & 4: Create Network and Assign Algorithm ---
     network = Network.from_networkx_graph(nx_graph)
-    print("Network Initialization Complete.")
+    network.remove_low_connectivity_routers()
 
     # --- Step 5 & 6: Instantiate and Run Simulation Engine ---
-    engine = FRRSimulationEngine(network, debug_print=True)
+    engine = ArborescenceSimulationEngine(network, debug_print=True)
+    ALGORITHM.compute_arborescence_packing(network.topology)
+    print("Network Initialization Complete.")
     
     # Run the simulation
     success, route = engine.simulate_routing(SOURCE, DESTINATION, ALGORITHM, "teste", "teste.csv")

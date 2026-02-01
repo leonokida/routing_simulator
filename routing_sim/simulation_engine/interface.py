@@ -16,3 +16,7 @@ class SimulationEngine(ABC):
     @abstractmethod
     def add_edge_failure(self, edge: tuple) -> None:
         ...
+
+    @abstractmethod
+    def clean_edge_failures(self) -> None:
+        ...
