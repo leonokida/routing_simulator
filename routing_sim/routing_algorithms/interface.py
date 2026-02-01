@@ -1,6 +1,6 @@
 # The interface for classes that implement routing algorithms
 # Author: Leon Okida
-# Last modification: 01/27/2026
+# Last modification: 02/01/2026
 
 from abc import ABC, abstractmethod
 import networkx as nx
@@ -15,4 +15,8 @@ class RoutingAlgorithm(ABC):
 
     @abstractmethod
     def switch_arborescence(self) -> None:
+        ...
+
+    @abstractmethod
+    def get_arborescence_index(self) -> None:
         ...

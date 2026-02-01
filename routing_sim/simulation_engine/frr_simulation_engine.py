@@ -10,10 +10,10 @@ from routing_sim.metrics import RoutingMetrics
 from routing_sim.routing_algorithms.interface import RoutingAlgorithm
 
 class FRRSimulationEngine(SimulationEngine):
-    def __init__(self, network: Network, debug_print: bool = True):
+    def __init__(self, network: Network, debug_print: bool = False):
         super().__init__()
         self.network = network
-        self.metrics = RoutingMetrics(debug_print=debug_print)
+        self.metrics = RoutingMetrics(debug_print)
         
     def _find_route_recursive(self, packet: Packet, source_router_name: str | int, algorithm: RoutingAlgorithm):
         # Function that simulates the forwarding function
@@ -31,28 +31,16 @@ class FRRSimulationEngine(SimulationEngine):
             return True
         
         # Loop implements FRR, tries all the available routing options
-        candidate_index = 0
-        while True:
-            # Get the best available next hop
-            next_hop_candidates = source_router.get_next_hop(
-                packet=packet,
-                global_topology=self.network.topology,
-                routing_algorithm=algorithm
-            )
-
-            # If no next hop is available, it backtracks
-            if (candidate_index >= len(next_hop_candidates)) or (next_hop_candidates is None):
-                parent_router = packet.path[-2] if len(packet.path) > 1 else ""
-                self.metrics.log_backtrack(source_router_name, parent_router)                
-                packet.record_backtracking_hop()
-                return False
-        
-            next_hop = next_hop_candidates[candidate_index]
-            
+        # Get the best available next hop
+        next_hop_candidates = source_router.get_next_hop_candidates(
+            packet=packet,
+            global_topology=self.network.topology,
+            routing_algorithm=algorithm
+        )
+        for next_hop in next_hop_candidates:            
             # Failure detected on the link to the next hop
             if ((source_router_name, next_hop) in self.failed_edges):
                 self.metrics.log_failure(source_router_name, next_hop)
-                candidate_index += 1
                 continue
 
             # Next hop is found, the packet is forwarded
@@ -64,14 +52,19 @@ class FRRSimulationEngine(SimulationEngine):
                 return True
             else:
                 self.metrics.log_failure(source_router_name, next_hop)
-                candidate_index += 1
+
+        # If no next hop is available, it backtracks
+        parent_router = packet.path[-2] if len(packet.path) > 1 else ""
+        self.metrics.log_backtrack(source_router_name, parent_router)                
+        packet.record_backtracking_hop()   
+        return False
 
     def simulate_routing(self, source: str | int, dest: str | int, algorithm: RoutingAlgorithm, experiment_name: str, file_path: str) -> tuple:
         # Initiates the routing simulation
         if source not in self.network.routers or dest not in self.network.routers:
             print("Error: Source or destination not found in network.")
             return
-
+        
         # Initializes the packet
         packet = Packet(origin_name=source, destination_name=dest)
         
@@ -87,7 +80,6 @@ class FRRSimulationEngine(SimulationEngine):
             packet=packet,
             global_topology=self.network.topology
         )
-        
         return success, packet.path
 
     def add_edge_failure(self, edge: tuple) -> None:

@@ -1,6 +1,6 @@
 # The routing algorithm based on Dijkstra's algorithm
 # Author: Leon Okida
-# Last modification: 01/27/2026
+# Last modification: 02/01/2026
 
 import networkx as nx
 from routing_sim.routing_algorithms.interface import RoutingAlgorithm
@@ -36,4 +36,7 @@ class DijsktraRouting(RoutingAlgorithm):
         return [hop[0] for hop in scored_neighbors]
 
     def switch_arborescence(self) -> None:
+        raise NotImplementedError
+    
+    def get_arborescence_index(self):
         raise NotImplementedError

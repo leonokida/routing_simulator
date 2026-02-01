@@ -41,14 +41,14 @@ network.remove_low_connectivity_routers()
 
 # Prepares each algorithm and engine for the experiments
 experiments: list[tuple[RoutingAlgorithm, SimulationEngine]] = [
-    (DijsktraRouting(), FRRSimulationEngine(network, False)),
-    (MaxFlowRouting(0.2), FRRSimulationEngine(network, False)),
-    (MaxFlowRouting(0.5), FRRSimulationEngine(network, False)),
-    (MaxFlowRouting(0.8), FRRSimulationEngine(network, False)),
-    (ProbabilisticMaxFlowRouting(0.5, 0.1), FRRSimulationEngine(network, False)),
-    (ProbabilisticMaxFlowRouting(1, 0.1), FRRSimulationEngine(network, False)),
-    (ProbabilisticMaxFlowRouting(2, 0.1), FRRSimulationEngine(network, False)),
-    (ArborescenceRouting(), ArborescenceSimulationEngine(network, False)),
+    (DijsktraRouting(), FRRSimulationEngine(network)),
+    (MaxFlowRouting(0.2), FRRSimulationEngine(network)),
+    (MaxFlowRouting(0.5), FRRSimulationEngine(network)),
+    (MaxFlowRouting(0.8), FRRSimulationEngine(network)),
+    (ProbabilisticMaxFlowRouting(0.5, 0.1), FRRSimulationEngine(network)),
+    (ProbabilisticMaxFlowRouting(1, 0.1), FRRSimulationEngine(network)),
+    (ProbabilisticMaxFlowRouting(2, 0.1), FRRSimulationEngine(network)),
+    (ArborescenceRouting(), ArborescenceSimulationEngine(network)),
 ]
 
 # Gets the file to store the results

@@ -10,7 +10,7 @@ class Router:
     def __init__(self, name): 
         self.name = name
 
-    def get_next_hop(self, packet: Packet, global_topology: nx.Graph, routing_algorithm: RoutingAlgorithm) -> list:
+    def get_next_hop_candidates(self, packet: Packet, global_topology: nx.Graph, routing_algorithm: RoutingAlgorithm) -> list:
         # Returns the list of next hop candidates based on the routing algorithm    
         return routing_algorithm.calculate_next_hop(
             source=self.name,
