@@ -117,3 +117,6 @@ class ArborescenceRouting(RoutingAlgorithm):
 
     def get_arborescence_index(self):
         return self.arborescence_index
+    
+    def reset_arborescence_index(self):
+        self.arborescence_index = 0

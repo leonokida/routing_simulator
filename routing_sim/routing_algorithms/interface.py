@@ -20,3 +20,7 @@ class RoutingAlgorithm(ABC):
     @abstractmethod
     def get_arborescence_index(self) -> None:
         ...
+
+    @abstractmethod
+    def reset_arborescence_index(self) -> None:
+        ...

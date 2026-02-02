@@ -36,10 +36,9 @@ class ArborescenceSimulationEngine(SimulationEngine):
             global_topology=self.network.topology,
             routing_algorithm=algorithm
         )
-        arbo_index = algorithm.get_arborescence_index()
-        for next_hop in next_hop_list[arbo_index:]:
-            # Failure detected on the link to the next hop
-            # Tries routing on the next arborescence
+        index = algorithm.get_arborescence_index()
+        for next_hop in next_hop_list[index:]:
+            # Failure found, switches arborescence
             if ((source_router_name, next_hop) in self.failed_edges):
                 self.metrics.log_failure(source_router_name, next_hop)
                 algorithm.switch_arborescence()
@@ -49,12 +48,14 @@ class ArborescenceSimulationEngine(SimulationEngine):
             self.metrics.log_forwarding(source_router_name, next_hop)
             success = self._find_route_recursive(packet, next_hop, algorithm)
 
-            # Returns successful routing or failure
+            # Returns successful routing or tries the next option
             if success:
                 return True
+            else:
+                self.metrics.log_failure(source_router_name, next_hop)
         
         return False
-
+        
     def simulate_routing(self, source: str | int, dest: str | int, algorithm: RoutingAlgorithm, experiment_name: str, file_path: str) -> tuple:
         # Initiates the routing simulation
         if source not in self.network.routers or dest not in self.network.routers:
@@ -65,6 +66,7 @@ class ArborescenceSimulationEngine(SimulationEngine):
         packet = Packet(origin_name=source, destination_name=dest)
         
         # Routes the packet from source to dest
+        algorithm.reset_arborescence_index()
         success = self._find_route_recursive(packet, source, algorithm)
 
         # Computes route metrics

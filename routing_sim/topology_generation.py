@@ -33,3 +33,20 @@ def read_graph(filename: str) -> nx.Graph:
     # Reads a graph from a file
     global_graph = nx.read_edgelist(filename, nodetype=str) # Assume node names are strings
     return _set_default_attributes(global_graph)
+
+
+def remove_low_connectivity_vertices(graph: nx.Graph) -> nx.Graph:
+        """
+        Removes vertices that possess connectivity equal to 1
+        Useful to test arborescence routing (which depends on edge connectivity > 1)
+        """
+        to_remove = []
+        
+        for vertex in list(graph.nodes):
+            if graph.degree(vertex) <= 1:
+                to_remove.append(vertex)
+        
+        for vertex in to_remove:
+            graph.remove_node(vertex)
+
+        return graph

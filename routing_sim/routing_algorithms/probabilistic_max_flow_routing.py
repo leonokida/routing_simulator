@@ -51,3 +51,6 @@ class ProbabilisticMaxFlowRouting(RoutingAlgorithm):
     
     def get_arborescence_index(self):
         raise NotImplementedError
+    
+    def reset_arborescence_index(self):
+        raise NotImplementedError

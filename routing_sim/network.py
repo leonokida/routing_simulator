@@ -38,19 +38,3 @@ class Network:
             new_network.add_link(u, v, weight=weight, capacity=capacity)
             
         return new_network
-    
-    def remove_low_connectivity_routers(self):
-        """
-        Removes routers that possess connectivity equal to 1
-        Useful to test arborescence routing (which depends on edge connectivity > 1)
-        """
-        to_remove = []
-        
-        for node in list(self.topology.nodes):
-            if self.topology.degree(node) <= 1:
-                to_remove.append(node)
-        
-        for router_name in to_remove:
-            self.topology.remove_node(router_name)
-            if router_name in self.routers:
-                del self.routers[router_name]
