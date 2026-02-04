@@ -73,10 +73,11 @@ class ArborescenceRouting(RoutingAlgorithm):
                         continue
 
                     # Checks if it's possible to add the edge to the arborescence
+                    # If it's possible, increases search space while taking care to not reuse edges
                     if self._condition_4(r, u, v, c, j, topology_digraph, used_edges):
                         arbo.add_edge(u, v)
                         used_edges.add((u, v))
-                        candidate_edges.update(set(topology_digraph.out_edges(v)))
+                        candidate_edges.update(set(topology_digraph.out_edges(v)) - used_edges)
                         break
 
             if not nx.is_arborescence(arbo):
