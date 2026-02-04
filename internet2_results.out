@@ -1,0 +1,4437 @@
+The edge-connectivity of the topology is 2
+Created #1 new_york-rooted arborescence
+Created #2 new_york-rooted arborescence
+Created #1 hartford-rooted arborescence
+Created #2 hartford-rooted arborescence
+Created #1 philadelphia-rooted arborescence
+Created #2 philadelphia-rooted arborescence
+Created #1 baltimore-rooted arborescence
+Created #2 baltimore-rooted arborescence
+Created #1 boston-rooted arborescence
+Created #2 boston-rooted arborescence
+Created #1 albany-rooted arborescence
+Created #2 albany-rooted arborescence
+Created #1 buffalo-rooted arborescence
+Created #2 buffalo-rooted arborescence
+Created #1 washington_dc-rooted arborescence
+Created #2 washington_dc-rooted arborescence
+Created #1 ashburn-rooted arborescence
+Created #2 ashburn-rooted arborescence
+Created #1 pittsburgh-rooted arborescence
+Created #2 pittsburgh-rooted arborescence
+Created #1 cleveland-rooted arborescence
+Created #2 cleveland-rooted arborescence
+Created #1 toledo-rooted arborescence
+Created #2 toledo-rooted arborescence
+Created #1 cincinatti-rooted arborescence
+Created #2 cincinatti-rooted arborescence
+Created #1 indianapolis-rooted arborescence
+Created #2 indianapolis-rooted arborescence
+Created #1 louisville-rooted arborescence
+Created #2 louisville-rooted arborescence
+Created #1 chicago-rooted arborescence
+Created #2 chicago-rooted arborescence
+Created #1 milwaukee-rooted arborescence
+Created #2 milwaukee-rooted arborescence
+Created #1 st_louis-rooted arborescence
+Created #2 st_louis-rooted arborescence
+Created #1 madison-rooted arborescence
+Created #2 madison-rooted arborescence
+Created #1 minneapolis-rooted arborescence
+Created #2 minneapolis-rooted arborescence
+Created #1 kansas_city-rooted arborescence
+Created #2 kansas_city-rooted arborescence
+Created #1 fargo-rooted arborescence
+Created #2 fargo-rooted arborescence
+Created #1 bozeman-rooted arborescence
+Created #2 bozeman-rooted arborescence
+Created #1 missoula-rooted arborescence
+Created #2 missoula-rooted arborescence
+Created #1 spokane-rooted arborescence
+Created #2 spokane-rooted arborescence
+Created #1 seattle-rooted arborescence
+Created #2 seattle-rooted arborescence
+Created #1 olympia-rooted arborescence
+Created #2 olympia-rooted arborescence
+Created #1 boise-rooted arborescence
+Created #2 boise-rooted arborescence
+Created #1 portland-rooted arborescence
+Created #2 portland-rooted arborescence
+Created #1 eugene-rooted arborescence
+Created #2 eugene-rooted arborescence
+Created #1 sacramento-rooted arborescence
+Created #2 sacramento-rooted arborescence
+Created #1 reno-rooted arborescence
+Created #2 reno-rooted arborescence
+Created #1 sunnyvale-rooted arborescence
+Created #2 sunnyvale-rooted arborescence
+Created #1 los_angeles-rooted arborescence
+Created #2 los_angeles-rooted arborescence
+Created #1 las_vegas-rooted arborescence
+Created #2 las_vegas-rooted arborescence
+Created #1 phoenix-rooted arborescence
+Created #2 phoenix-rooted arborescence
+Created #1 salt_lake_city-rooted arborescence
+Created #2 salt_lake_city-rooted arborescence
+Created #1 denver-rooted arborescence
+Created #2 denver-rooted arborescence
+Created #1 tucson-rooted arborescence
+Created #2 tucson-rooted arborescence
+Created #1 el_paso-rooted arborescence
+Created #2 el_paso-rooted arborescence
+Created #1 albuquerque-rooted arborescence
+Created #2 albuquerque-rooted arborescence
+Created #1 san_antonio-rooted arborescence
+Created #2 san_antonio-rooted arborescence
+Created #1 houston-rooted arborescence
+Created #2 houston-rooted arborescence
+Created #1 dallas-rooted arborescence
+Created #2 dallas-rooted arborescence
+Created #1 jackson-rooted arborescence
+Created #2 jackson-rooted arborescence
+Created #1 baton_rouge-rooted arborescence
+Created #2 baton_rouge-rooted arborescence
+Created #1 tulsa-rooted arborescence
+Created #2 tulsa-rooted arborescence
+Created #1 memphis-rooted arborescence
+Created #2 memphis-rooted arborescence
+Created #1 nashville-rooted arborescence
+Created #2 nashville-rooted arborescence
+Created #1 atlanta-rooted arborescence
+Created #2 atlanta-rooted arborescence
+Created #1 pensacola-rooted arborescence
+Created #2 pensacola-rooted arborescence
+Created #1 jacksonville-rooted arborescence
+Created #2 jacksonville-rooted arborescence
+Created #1 charlotte-rooted arborescence
+Created #2 charlotte-rooted arborescence
+Created #1 raleigh-rooted arborescence
+Created #2 raleigh-rooted arborescence
+Current Algorithm: Algorithm based on Dijkstra's
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 2
+2. Sum of Vertex Degrees: 8
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 17
+3. Avg. Alternate Routes: 0.750
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 26
+3. Avg. Alternate Routes: 0.714
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 10
+2. Sum of Vertex Degrees: 27
+3. Avg. Alternate Routes: 0.444
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 22
+3. Avg. Alternate Routes: 0.429
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 25
+3. Avg. Alternate Routes: 0.571
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 2
+2. Sum of Vertex Degrees: 9
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 18
+2. Sum of Vertex Degrees: 50
+3. Avg. Alternate Routes: 0.118
+Backtracks Performed: 7
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 18
+3. Avg. Alternate Routes: 0.750
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 36
+2. Sum of Vertex Degrees: 94
+3. Avg. Alternate Routes: 0.029
+Backtracks Performed: 3
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 3
+2. Sum of Vertex Degrees: 11
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 16
+3. Avg. Alternate Routes: 0.750
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 2
+2. Sum of Vertex Degrees: 8
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 29
+2. Sum of Vertex Degrees: 78
+3. Avg. Alternate Routes: 0.107
+Backtracks Performed: 4
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 7
+2. Sum of Vertex Degrees: 22
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 7
+2. Sum of Vertex Degrees: 20
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 17
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 21
+3. Avg. Alternate Routes: 0.600
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 14
+3. Avg. Alternate Routes: 0.250
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 24
+3. Avg. Alternate Routes: 0.571
+Backtracks Performed: 2
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 19
+3. Avg. Alternate Routes: 0.600
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 10
+2. Sum of Vertex Degrees: 31
+3. Avg. Alternate Routes: 0.778
+Backtracks Performed: 2
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 16
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 11
+2. Sum of Vertex Degrees: 33
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 7
+2. Sum of Vertex Degrees: 23
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 9
+2. Sum of Vertex Degrees: 28
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 16
+3. Avg. Alternate Routes: 0.200
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 9
+2. Sum of Vertex Degrees: 26
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 4
+2. Sum of Vertex Degrees: 15
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 26
+2. Sum of Vertex Degrees: 68
+3. Avg. Alternate Routes: 0.080
+Backtracks Performed: 3
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 15
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 11
+2. Sum of Vertex Degrees: 31
+3. Avg. Alternate Routes: 0.100
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 4
+2. Sum of Vertex Degrees: 16
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 22
+3. Avg. Alternate Routes: 0.286
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 18
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 7
+2. Sum of Vertex Degrees: 22
+3. Avg. Alternate Routes: 0.333
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 7
+2. Sum of Vertex Degrees: 21
+3. Avg. Alternate Routes: 0.667
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 9
+2. Sum of Vertex Degrees: 26
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 19
+3. Avg. Alternate Routes: 0.600
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 26
+3. Avg. Alternate Routes: 0.571
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 15
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 7
+2. Sum of Vertex Degrees: 20
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 3
+2. Sum of Vertex Degrees: 9
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 7
+2. Sum of Vertex Degrees: 21
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 12
+2. Sum of Vertex Degrees: 37
+3. Avg. Alternate Routes: 0.636
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 16
+2. Sum of Vertex Degrees: 43
+3. Avg. Alternate Routes: 0.400
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 12
+2. Sum of Vertex Degrees: 31
+3. Avg. Alternate Routes: 0.273
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 12
+2. Sum of Vertex Degrees: 33
+3. Avg. Alternate Routes: 0.364
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 17
+3. Avg. Alternate Routes: 0.200
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 19
+3. Avg. Alternate Routes: 0.400
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 16
+3. Avg. Alternate Routes: 0.750
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 22
+2. Sum of Vertex Degrees: 60
+3. Avg. Alternate Routes: 0.238
+Backtracks Performed: 22
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 18
+3. Avg. Alternate Routes: 0.750
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 7
+2. Sum of Vertex Degrees: 23
+3. Avg. Alternate Routes: 0.667
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 11
+2. Sum of Vertex Degrees: 33
+3. Avg. Alternate Routes: 0.600
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 11
+2. Sum of Vertex Degrees: 33
+3. Avg. Alternate Routes: 0.600
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 20
+3. Avg. Alternate Routes: 0.400
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 7
+2. Sum of Vertex Degrees: 22
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 13
+2. Sum of Vertex Degrees: 34
+3. Avg. Alternate Routes: 0.333
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 14
+2. Sum of Vertex Degrees: 38
+3. Avg. Alternate Routes: 0.077
+Backtracks Performed: 10
+========================================
+Current Algorithm: MaxFlowRouting with lambda=0.2
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 2
+2. Sum of Vertex Degrees: 8
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 19
+3. Avg. Alternate Routes: 0.600
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 26
+3. Avg. Alternate Routes: 0.714
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 10
+2. Sum of Vertex Degrees: 31
+3. Avg. Alternate Routes: 0.333
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 22
+3. Avg. Alternate Routes: 0.429
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 25
+3. Avg. Alternate Routes: 0.571
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 2
+2. Sum of Vertex Degrees: 9
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 18
+2. Sum of Vertex Degrees: 50
+3. Avg. Alternate Routes: 0.118
+Backtracks Performed: 7
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 18
+3. Avg. Alternate Routes: 0.750
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 18
+3. Avg. Alternate Routes: 0.750
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 3
+2. Sum of Vertex Degrees: 11
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 16
+3. Avg. Alternate Routes: 0.750
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 2
+2. Sum of Vertex Degrees: 8
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 29
+2. Sum of Vertex Degrees: 78
+3. Avg. Alternate Routes: 0.107
+Backtracks Performed: 4
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 7
+2. Sum of Vertex Degrees: 22
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 7
+2. Sum of Vertex Degrees: 20
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 17
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 21
+3. Avg. Alternate Routes: 0.600
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 14
+3. Avg. Alternate Routes: 0.250
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 24
+3. Avg. Alternate Routes: 0.571
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 19
+3. Avg. Alternate Routes: 0.600
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 18
+3. Avg. Alternate Routes: 0.400
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 16
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 11
+2. Sum of Vertex Degrees: 33
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 7
+2. Sum of Vertex Degrees: 23
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 9
+2. Sum of Vertex Degrees: 28
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 16
+3. Avg. Alternate Routes: 0.200
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 9
+2. Sum of Vertex Degrees: 26
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 4
+2. Sum of Vertex Degrees: 15
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 24
+3. Avg. Alternate Routes: 0.571
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 15
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 11
+2. Sum of Vertex Degrees: 31
+3. Avg. Alternate Routes: 0.100
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 4
+2. Sum of Vertex Degrees: 16
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 21
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 18
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 19
+3. Avg. Alternate Routes: 0.750
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 7
+2. Sum of Vertex Degrees: 21
+3. Avg. Alternate Routes: 0.667
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 9
+2. Sum of Vertex Degrees: 27
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 2
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 19
+3. Avg. Alternate Routes: 0.600
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 17
+3. Avg. Alternate Routes: 0.400
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 15
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 7
+2. Sum of Vertex Degrees: 21
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 3
+2. Sum of Vertex Degrees: 9
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 7
+2. Sum of Vertex Degrees: 21
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 12
+2. Sum of Vertex Degrees: 37
+3. Avg. Alternate Routes: 0.636
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 16
+2. Sum of Vertex Degrees: 43
+3. Avg. Alternate Routes: 0.400
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 12
+2. Sum of Vertex Degrees: 31
+3. Avg. Alternate Routes: 0.273
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 14
+2. Sum of Vertex Degrees: 36
+3. Avg. Alternate Routes: 0.308
+Backtracks Performed: 2
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 17
+3. Avg. Alternate Routes: 0.200
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 19
+3. Avg. Alternate Routes: 0.400
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 16
+3. Avg. Alternate Routes: 0.750
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 22
+2. Sum of Vertex Degrees: 60
+3. Avg. Alternate Routes: 0.238
+Backtracks Performed: 22
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 18
+3. Avg. Alternate Routes: 0.750
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 7
+2. Sum of Vertex Degrees: 23
+3. Avg. Alternate Routes: 0.667
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 11
+2. Sum of Vertex Degrees: 33
+3. Avg. Alternate Routes: 0.600
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 13
+2. Sum of Vertex Degrees: 35
+3. Avg. Alternate Routes: 0.417
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 20
+3. Avg. Alternate Routes: 0.400
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 9
+2. Sum of Vertex Degrees: 29
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 13
+2. Sum of Vertex Degrees: 36
+3. Avg. Alternate Routes: 0.417
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 13
+2. Sum of Vertex Degrees: 35
+3. Avg. Alternate Routes: 0.417
+Backtracks Performed: 1
+========================================
+Current Algorithm: MaxFlowRouting with lambda=0.5
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 2
+2. Sum of Vertex Degrees: 8
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 17
+3. Avg. Alternate Routes: 0.750
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 26
+3. Avg. Alternate Routes: 0.714
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 24
+3. Avg. Alternate Routes: 0.571
+Backtracks Performed: 20
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 22
+3. Avg. Alternate Routes: 0.429
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 12
+2. Sum of Vertex Degrees: 32
+3. Avg. Alternate Routes: 0.455
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 2
+2. Sum of Vertex Degrees: 9
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 3
+2. Sum of Vertex Degrees: 11
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 18
+3. Avg. Alternate Routes: 0.750
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 18
+3. Avg. Alternate Routes: 0.750
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 3
+2. Sum of Vertex Degrees: 11
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 16
+3. Avg. Alternate Routes: 0.750
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 2
+2. Sum of Vertex Degrees: 8
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 29
+2. Sum of Vertex Degrees: 78
+3. Avg. Alternate Routes: 0.107
+Backtracks Performed: 4
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 7
+2. Sum of Vertex Degrees: 22
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 9
+2. Sum of Vertex Degrees: 27
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 21
+3. Avg. Alternate Routes: 0.600
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 14
+2. Sum of Vertex Degrees: 38
+3. Avg. Alternate Routes: 0.385
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 14
+3. Avg. Alternate Routes: 0.250
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 24
+3. Avg. Alternate Routes: 0.571
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 19
+3. Avg. Alternate Routes: 0.600
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 11
+2. Sum of Vertex Degrees: 35
+3. Avg. Alternate Routes: 0.700
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 16
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 15
+3. Avg. Alternate Routes: 0.250
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 7
+2. Sum of Vertex Degrees: 23
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 9
+2. Sum of Vertex Degrees: 28
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 16
+3. Avg. Alternate Routes: 0.200
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 9
+2. Sum of Vertex Degrees: 26
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 4
+2. Sum of Vertex Degrees: 15
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 25
+3. Avg. Alternate Routes: 0.714
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 15
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 9
+2. Sum of Vertex Degrees: 26
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 4
+2. Sum of Vertex Degrees: 16
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 21
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 18
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 19
+3. Avg. Alternate Routes: 0.750
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 7
+2. Sum of Vertex Degrees: 21
+3. Avg. Alternate Routes: 0.667
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 9
+2. Sum of Vertex Degrees: 27
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 2
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 19
+3. Avg. Alternate Routes: 0.600
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 26
+3. Avg. Alternate Routes: 0.571
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 15
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 7
+2. Sum of Vertex Degrees: 21
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 3
+2. Sum of Vertex Degrees: 9
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 9
+2. Sum of Vertex Degrees: 26
+3. Avg. Alternate Routes: 0.125
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 13
+2. Sum of Vertex Degrees: 41
+3. Avg. Alternate Routes: 0.667
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 12
+2. Sum of Vertex Degrees: 37
+3. Avg. Alternate Routes: 0.636
+Backtracks Performed: 15
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 12
+2. Sum of Vertex Degrees: 31
+3. Avg. Alternate Routes: 0.273
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 14
+2. Sum of Vertex Degrees: 36
+3. Avg. Alternate Routes: 0.308
+Backtracks Performed: 3
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 17
+3. Avg. Alternate Routes: 0.200
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 10
+2. Sum of Vertex Degrees: 31
+3. Avg. Alternate Routes: 0.111
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 16
+3. Avg. Alternate Routes: 0.750
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 7
+2. Sum of Vertex Degrees: 22
+3. Avg. Alternate Routes: 0.667
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 18
+3. Avg. Alternate Routes: 0.750
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 11
+2. Sum of Vertex Degrees: 33
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 12
+2. Sum of Vertex Degrees: 37
+3. Avg. Alternate Routes: 0.636
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 13
+2. Sum of Vertex Degrees: 34
+3. Avg. Alternate Routes: 0.417
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 20
+3. Avg. Alternate Routes: 0.400
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 7
+2. Sum of Vertex Degrees: 22
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 13
+2. Sum of Vertex Degrees: 36
+3. Avg. Alternate Routes: 0.417
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 14
+2. Sum of Vertex Degrees: 39
+3. Avg. Alternate Routes: 0.154
+Backtracks Performed: 1
+========================================
+Current Algorithm: MaxFlowRouting with lambda=0.8
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 2
+2. Sum of Vertex Degrees: 8
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 19
+3. Avg. Alternate Routes: 0.600
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 26
+3. Avg. Alternate Routes: 0.714
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 10
+2. Sum of Vertex Degrees: 31
+3. Avg. Alternate Routes: 0.667
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 22
+3. Avg. Alternate Routes: 0.429
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 16
+2. Sum of Vertex Degrees: 46
+3. Avg. Alternate Routes: 0.400
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 2
+2. Sum of Vertex Degrees: 9
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 3
+2. Sum of Vertex Degrees: 11
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 18
+3. Avg. Alternate Routes: 0.750
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 36
+2. Sum of Vertex Degrees: 94
+3. Avg. Alternate Routes: 0.029
+Backtracks Performed: 3
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 26
+2. Sum of Vertex Degrees: 72
+3. Avg. Alternate Routes: 0.120
+Backtracks Performed: 2
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 30
+2. Sum of Vertex Degrees: 80
+3. Avg. Alternate Routes: 0.103
+Backtracks Performed: 6
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 2
+2. Sum of Vertex Degrees: 8
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 29
+2. Sum of Vertex Degrees: 78
+3. Avg. Alternate Routes: 0.107
+Backtracks Performed: 3
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 9
+2. Sum of Vertex Degrees: 27
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 7
+2. Sum of Vertex Degrees: 20
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 2
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 21
+3. Avg. Alternate Routes: 0.600
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 26
+3. Avg. Alternate Routes: 0.571
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 14
+3. Avg. Alternate Routes: 0.250
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 24
+3. Avg. Alternate Routes: 0.571
+Backtracks Performed: 3
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 19
+3. Avg. Alternate Routes: 0.600
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 15
+2. Sum of Vertex Degrees: 46
+3. Avg. Alternate Routes: 0.571
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 16
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 18
+2. Sum of Vertex Degrees: 54
+3. Avg. Alternate Routes: 0.412
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 26
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 14
+2. Sum of Vertex Degrees: 39
+3. Avg. Alternate Routes: 0.462
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 16
+3. Avg. Alternate Routes: 0.200
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 9
+2. Sum of Vertex Degrees: 26
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 3
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 4
+2. Sum of Vertex Degrees: 15
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 26
+2. Sum of Vertex Degrees: 68
+3. Avg. Alternate Routes: 0.080
+Backtracks Performed: 3
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 15
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 11
+2. Sum of Vertex Degrees: 31
+3. Avg. Alternate Routes: 0.100
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 4
+2. Sum of Vertex Degrees: 16
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 21
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 18
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 7
+2. Sum of Vertex Degrees: 22
+3. Avg. Alternate Routes: 0.333
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 10
+2. Sum of Vertex Degrees: 30
+3. Avg. Alternate Routes: 0.333
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 10
+2. Sum of Vertex Degrees: 32
+3. Avg. Alternate Routes: 0.444
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 26
+3. Avg. Alternate Routes: 0.571
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 23
+3. Avg. Alternate Routes: 0.429
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 15
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 9
+2. Sum of Vertex Degrees: 26
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 9
+2. Sum of Vertex Degrees: 28
+3. Avg. Alternate Routes: 0.125
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 24
+2. Sum of Vertex Degrees: 67
+3. Avg. Alternate Routes: 0.043
+Backtracks Performed: 4
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 13
+2. Sum of Vertex Degrees: 41
+3. Avg. Alternate Routes: 0.667
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 12
+2. Sum of Vertex Degrees: 32
+3. Avg. Alternate Routes: 0.364
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 13
+2. Sum of Vertex Degrees: 34
+3. Avg. Alternate Routes: 0.333
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 15
+2. Sum of Vertex Degrees: 39
+3. Avg. Alternate Routes: 0.357
+Backtracks Performed: 3
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 17
+3. Avg. Alternate Routes: 0.200
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 10
+2. Sum of Vertex Degrees: 31
+3. Avg. Alternate Routes: 0.111
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 16
+3. Avg. Alternate Routes: 0.750
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 7
+2. Sum of Vertex Degrees: 22
+3. Avg. Alternate Routes: 0.667
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 18
+3. Avg. Alternate Routes: 0.750
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 11
+2. Sum of Vertex Degrees: 31
+3. Avg. Alternate Routes: 0.400
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 12
+2. Sum of Vertex Degrees: 37
+3. Avg. Alternate Routes: 0.636
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 12
+2. Sum of Vertex Degrees: 37
+3. Avg. Alternate Routes: 0.636
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 25
+3. Avg. Alternate Routes: 0.429
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 20
+3. Avg. Alternate Routes: 0.400
+Backtracks Performed: 25
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 19
+2. Sum of Vertex Degrees: 52
+3. Avg. Alternate Routes: 0.278
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 13
+2. Sum of Vertex Degrees: 36
+3. Avg. Alternate Routes: 0.417
+Backtracks Performed: 0
+========================================
+Current Algorithm: Probabilistic MaxFlowRouting with lambda=0.5 and p=0.1
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 2
+2. Sum of Vertex Degrees: 8
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 17
+3. Avg. Alternate Routes: 0.750
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 26
+3. Avg. Alternate Routes: 0.714
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 24
+3. Avg. Alternate Routes: 0.571
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 22
+3. Avg. Alternate Routes: 0.429
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 16
+2. Sum of Vertex Degrees: 44
+3. Avg. Alternate Routes: 0.333
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 2
+2. Sum of Vertex Degrees: 9
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 3
+2. Sum of Vertex Degrees: 11
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 18
+3. Avg. Alternate Routes: 0.750
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 7
+2. Sum of Vertex Degrees: 21
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 26
+2. Sum of Vertex Degrees: 72
+3. Avg. Alternate Routes: 0.120
+Backtracks Performed: 2
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 21
+2. Sum of Vertex Degrees: 59
+3. Avg. Alternate Routes: 0.150
+Backtracks Performed: 18
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 2
+2. Sum of Vertex Degrees: 8
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 29
+2. Sum of Vertex Degrees: 78
+3. Avg. Alternate Routes: 0.107
+Backtracks Performed: 3
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 9
+2. Sum of Vertex Degrees: 27
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 7
+2. Sum of Vertex Degrees: 20
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 21
+3. Avg. Alternate Routes: 0.600
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 14
+2. Sum of Vertex Degrees: 38
+3. Avg. Alternate Routes: 0.385
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 14
+3. Avg. Alternate Routes: 0.250
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 24
+3. Avg. Alternate Routes: 0.571
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 19
+3. Avg. Alternate Routes: 0.600
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 15
+2. Sum of Vertex Degrees: 46
+3. Avg. Alternate Routes: 0.571
+Backtracks Performed: 2
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 16
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 18
+2. Sum of Vertex Degrees: 54
+3. Avg. Alternate Routes: 0.412
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 26
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 16
+2. Sum of Vertex Degrees: 46
+3. Avg. Alternate Routes: 0.533
+Backtracks Performed: 2
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 16
+3. Avg. Alternate Routes: 0.200
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 9
+2. Sum of Vertex Degrees: 26
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 4
+2. Sum of Vertex Degrees: 15
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 10
+2. Sum of Vertex Degrees: 28
+3. Avg. Alternate Routes: 0.444
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 15
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 11
+2. Sum of Vertex Degrees: 32
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 4
+2. Sum of Vertex Degrees: 16
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 21
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 18
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 7
+2. Sum of Vertex Degrees: 22
+3. Avg. Alternate Routes: 0.333
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 10
+2. Sum of Vertex Degrees: 30
+3. Avg. Alternate Routes: 0.333
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 9
+2. Sum of Vertex Degrees: 26
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 26
+3. Avg. Alternate Routes: 0.571
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 23
+2. Sum of Vertex Degrees: 65
+3. Avg. Alternate Routes: 0.136
+Backtracks Performed: 2
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 15
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 14
+2. Sum of Vertex Degrees: 38
+3. Avg. Alternate Routes: 0.077
+Backtracks Performed: 3
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 9
+2. Sum of Vertex Degrees: 28
+3. Avg. Alternate Routes: 0.125
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 19
+2. Sum of Vertex Degrees: 50
+3. Avg. Alternate Routes: 0.111
+Backtracks Performed: 2
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 13
+2. Sum of Vertex Degrees: 41
+3. Avg. Alternate Routes: 0.667
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 17
+2. Sum of Vertex Degrees: 47
+3. Avg. Alternate Routes: 0.250
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 13
+2. Sum of Vertex Degrees: 34
+3. Avg. Alternate Routes: 0.333
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 13
+2. Sum of Vertex Degrees: 36
+3. Avg. Alternate Routes: 0.417
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 17
+3. Avg. Alternate Routes: 0.200
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 10
+2. Sum of Vertex Degrees: 31
+3. Avg. Alternate Routes: 0.111
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 16
+3. Avg. Alternate Routes: 0.750
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 13
+2. Sum of Vertex Degrees: 36
+3. Avg. Alternate Routes: 0.333
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 18
+3. Avg. Alternate Routes: 0.750
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 11
+2. Sum of Vertex Degrees: 31
+3. Avg. Alternate Routes: 0.400
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 12
+2. Sum of Vertex Degrees: 37
+3. Avg. Alternate Routes: 0.636
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 11
+2. Sum of Vertex Degrees: 33
+3. Avg. Alternate Routes: 0.600
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 25
+3. Avg. Alternate Routes: 0.429
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 20
+3. Avg. Alternate Routes: 0.400
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 19
+2. Sum of Vertex Degrees: 52
+3. Avg. Alternate Routes: 0.278
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 19
+2. Sum of Vertex Degrees: 51
+3. Avg. Alternate Routes: 0.222
+Backtracks Performed: 1
+========================================
+Current Algorithm: Probabilistic MaxFlowRouting with lambda=1 and p=0.1
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 2
+2. Sum of Vertex Degrees: 8
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 19
+3. Avg. Alternate Routes: 0.600
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 26
+3. Avg. Alternate Routes: 0.714
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 10
+2. Sum of Vertex Degrees: 31
+3. Avg. Alternate Routes: 0.667
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 22
+3. Avg. Alternate Routes: 0.429
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 12
+2. Sum of Vertex Degrees: 33
+3. Avg. Alternate Routes: 0.455
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 2
+2. Sum of Vertex Degrees: 9
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 3
+2. Sum of Vertex Degrees: 11
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 18
+3. Avg. Alternate Routes: 0.750
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 18
+3. Avg. Alternate Routes: 0.750
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 7
+2. Sum of Vertex Degrees: 21
+3. Avg. Alternate Routes: 0.667
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 26
+2. Sum of Vertex Degrees: 72
+3. Avg. Alternate Routes: 0.120
+Backtracks Performed: 3
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 2
+2. Sum of Vertex Degrees: 8
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 29
+2. Sum of Vertex Degrees: 78
+3. Avg. Alternate Routes: 0.107
+Backtracks Performed: 3
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 9
+2. Sum of Vertex Degrees: 27
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 7
+2. Sum of Vertex Degrees: 20
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 21
+3. Avg. Alternate Routes: 0.600
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 26
+3. Avg. Alternate Routes: 0.571
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 14
+3. Avg. Alternate Routes: 0.250
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 24
+3. Avg. Alternate Routes: 0.571
+Backtracks Performed: 3
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 19
+3. Avg. Alternate Routes: 0.600
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 15
+2. Sum of Vertex Degrees: 46
+3. Avg. Alternate Routes: 0.571
+Backtracks Performed: 2
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 16
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 14
+2. Sum of Vertex Degrees: 43
+3. Avg. Alternate Routes: 0.538
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 26
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 14
+2. Sum of Vertex Degrees: 39
+3. Avg. Alternate Routes: 0.462
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 16
+3. Avg. Alternate Routes: 0.200
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 9
+2. Sum of Vertex Degrees: 26
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 4
+2. Sum of Vertex Degrees: 15
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 24
+3. Avg. Alternate Routes: 0.571
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 15
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 11
+2. Sum of Vertex Degrees: 32
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 4
+2. Sum of Vertex Degrees: 16
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 10
+2. Sum of Vertex Degrees: 31
+3. Avg. Alternate Routes: 0.222
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 18
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 7
+2. Sum of Vertex Degrees: 22
+3. Avg. Alternate Routes: 0.333
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 10
+2. Sum of Vertex Degrees: 30
+3. Avg. Alternate Routes: 0.333
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 9
+2. Sum of Vertex Degrees: 27
+3. Avg. Alternate Routes: 0.625
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 26
+3. Avg. Alternate Routes: 0.571
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 19
+3. Avg. Alternate Routes: 0.600
+Backtracks Performed: 48
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 15
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 7
+2. Sum of Vertex Degrees: 20
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 3
+2. Sum of Vertex Degrees: 9
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 9
+2. Sum of Vertex Degrees: 26
+3. Avg. Alternate Routes: 0.125
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 13
+2. Sum of Vertex Degrees: 41
+3. Avg. Alternate Routes: 0.667
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 15
+2. Sum of Vertex Degrees: 45
+3. Avg. Alternate Routes: 0.571
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 13
+2. Sum of Vertex Degrees: 34
+3. Avg. Alternate Routes: 0.333
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 13
+2. Sum of Vertex Degrees: 36
+3. Avg. Alternate Routes: 0.417
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 17
+3. Avg. Alternate Routes: 0.200
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 19
+3. Avg. Alternate Routes: 0.400
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 16
+3. Avg. Alternate Routes: 0.750
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 22
+2. Sum of Vertex Degrees: 60
+3. Avg. Alternate Routes: 0.238
+Backtracks Performed: 22
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 18
+3. Avg. Alternate Routes: 0.750
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 9
+2. Sum of Vertex Degrees: 29
+3. Avg. Alternate Routes: 0.625
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 12
+2. Sum of Vertex Degrees: 37
+3. Avg. Alternate Routes: 0.636
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 12
+2. Sum of Vertex Degrees: 37
+3. Avg. Alternate Routes: 0.636
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 25
+3. Avg. Alternate Routes: 0.429
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 7
+2. Sum of Vertex Degrees: 22
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 15
+2. Sum of Vertex Degrees: 41
+3. Avg. Alternate Routes: 0.357
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 13
+2. Sum of Vertex Degrees: 34
+3. Avg. Alternate Routes: 0.333
+Backtracks Performed: 0
+========================================
+Current Algorithm: Probabilistic MaxFlowRouting with lambda=2 and p=0.1
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 2
+2. Sum of Vertex Degrees: 8
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 19
+3. Avg. Alternate Routes: 0.600
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 26
+3. Avg. Alternate Routes: 0.714
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 11
+2. Sum of Vertex Degrees: 35
+3. Avg. Alternate Routes: 0.700
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 22
+3. Avg. Alternate Routes: 0.429
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 12
+2. Sum of Vertex Degrees: 35
+3. Avg. Alternate Routes: 0.545
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 2
+2. Sum of Vertex Degrees: 9
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 20
+2. Sum of Vertex Degrees: 55
+3. Avg. Alternate Routes: 0.105
+Backtracks Performed: 7
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 18
+3. Avg. Alternate Routes: 0.750
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 18
+3. Avg. Alternate Routes: 0.750
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 3
+2. Sum of Vertex Degrees: 11
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 7
+2. Sum of Vertex Degrees: 19
+3. Avg. Alternate Routes: 0.333
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 2
+2. Sum of Vertex Degrees: 8
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 29
+2. Sum of Vertex Degrees: 78
+3. Avg. Alternate Routes: 0.107
+Backtracks Performed: 4
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 9
+2. Sum of Vertex Degrees: 27
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 7
+2. Sum of Vertex Degrees: 20
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 21
+3. Avg. Alternate Routes: 0.600
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 17
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 14
+3. Avg. Alternate Routes: 0.250
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 24
+3. Avg. Alternate Routes: 0.571
+Backtracks Performed: 3
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 19
+3. Avg. Alternate Routes: 0.600
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 10
+2. Sum of Vertex Degrees: 30
+3. Avg. Alternate Routes: 0.667
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 16
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 14
+2. Sum of Vertex Degrees: 43
+3. Avg. Alternate Routes: 0.538
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 26
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 12
+2. Sum of Vertex Degrees: 34
+3. Avg. Alternate Routes: 0.636
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 16
+3. Avg. Alternate Routes: 0.200
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 10
+2. Sum of Vertex Degrees: 27
+3. Avg. Alternate Routes: 0.111
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 4
+2. Sum of Vertex Degrees: 15
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 10
+2. Sum of Vertex Degrees: 28
+3. Avg. Alternate Routes: 0.444
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 15
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 11
+2. Sum of Vertex Degrees: 32
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 4
+2. Sum of Vertex Degrees: 16
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 10
+2. Sum of Vertex Degrees: 30
+3. Avg. Alternate Routes: 0.333
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 18
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 7
+2. Sum of Vertex Degrees: 22
+3. Avg. Alternate Routes: 0.333
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 7
+2. Sum of Vertex Degrees: 21
+3. Avg. Alternate Routes: 0.667
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 10
+2. Sum of Vertex Degrees: 30
+3. Avg. Alternate Routes: 0.333
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 26
+3. Avg. Alternate Routes: 0.571
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 14
+2. Sum of Vertex Degrees: 42
+3. Avg. Alternate Routes: 0.538
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 15
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 14
+2. Sum of Vertex Degrees: 38
+3. Avg. Alternate Routes: 0.077
+Backtracks Performed: 3
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 3
+2. Sum of Vertex Degrees: 9
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 9
+2. Sum of Vertex Degrees: 28
+3. Avg. Alternate Routes: 0.125
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 13
+2. Sum of Vertex Degrees: 41
+3. Avg. Alternate Routes: 0.667
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 12
+2. Sum of Vertex Degrees: 37
+3. Avg. Alternate Routes: 0.636
+Backtracks Performed: 14
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 13
+2. Sum of Vertex Degrees: 34
+3. Avg. Alternate Routes: 0.333
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 17
+2. Sum of Vertex Degrees: 48
+3. Avg. Alternate Routes: 0.062
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 17
+3. Avg. Alternate Routes: 0.200
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 19
+3. Avg. Alternate Routes: 0.400
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 16
+3. Avg. Alternate Routes: 0.750
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 13
+2. Sum of Vertex Degrees: 36
+3. Avg. Alternate Routes: 0.333
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 18
+3. Avg. Alternate Routes: 0.750
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 9
+2. Sum of Vertex Degrees: 29
+3. Avg. Alternate Routes: 0.625
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 12
+2. Sum of Vertex Degrees: 37
+3. Avg. Alternate Routes: 0.636
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 22
+2. Sum of Vertex Degrees: 57
+3. Avg. Alternate Routes: 0.381
+Backtracks Performed: 6
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 25
+3. Avg. Alternate Routes: 0.429
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 7
+2. Sum of Vertex Degrees: 22
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 1
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 13
+2. Sum of Vertex Degrees: 36
+3. Avg. Alternate Routes: 0.417
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 14
+2. Sum of Vertex Degrees: 40
+3. Avg. Alternate Routes: 0.077
+Backtracks Performed: 0
+========================================
+Current Algorithm: Arborescence Routing
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 2
+2. Sum of Vertex Degrees: 8
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 10
+2. Sum of Vertex Degrees: 28
+3. Avg. Alternate Routes: 0.444
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 14
+2. Sum of Vertex Degrees: 39
+3. Avg. Alternate Routes: 0.077
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 32
+2. Sum of Vertex Degrees: 81
+3. Avg. Alternate Routes: 0.097
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 24
+3. Avg. Alternate Routes: 0.571
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 16
+2. Sum of Vertex Degrees: 46
+3. Avg. Alternate Routes: 0.467
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 3
+2. Sum of Vertex Degrees: 11
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 4
+2. Sum of Vertex Degrees: 14
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 18
+3. Avg. Alternate Routes: 0.750
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 7
+2. Sum of Vertex Degrees: 24
+3. Avg. Alternate Routes: 0.833
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 3
+2. Sum of Vertex Degrees: 11
+3. Avg. Alternate Routes: 1.000
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 16
+3. Avg. Alternate Routes: 0.750
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 19
+3. Avg. Alternate Routes: 0.143
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 16
+3. Avg. Alternate Routes: 0.400
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 11
+2. Sum of Vertex Degrees: 33
+3. Avg. Alternate Routes: 0.300
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 13
+2. Sum of Vertex Degrees: 36
+3. Avg. Alternate Routes: 0.583
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 7
+2. Sum of Vertex Degrees: 20
+3. Avg. Alternate Routes: 0.333
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 17
+2. Sum of Vertex Degrees: 47
+3. Avg. Alternate Routes: 0.438
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 12
+2. Sum of Vertex Degrees: 32
+3. Avg. Alternate Routes: 0.364
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 22
+2. Sum of Vertex Degrees: 59
+3. Avg. Alternate Routes: 0.238
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 19
+3. Avg. Alternate Routes: 0.600
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 28
+2. Sum of Vertex Degrees: 71
+3. Avg. Alternate Routes: 0.259
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 16
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 17
+2. Sum of Vertex Degrees: 48
+3. Avg. Alternate Routes: 0.375
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 18
+2. Sum of Vertex Degrees: 47
+3. Avg. Alternate Routes: 0.353
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 15
+2. Sum of Vertex Degrees: 41
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 20
+2. Sum of Vertex Degrees: 54
+3. Avg. Alternate Routes: 0.211
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 20
+2. Sum of Vertex Degrees: 52
+3. Avg. Alternate Routes: 0.211
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 24
+3. Avg. Alternate Routes: 0.571
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 8
+2. Sum of Vertex Degrees: 25
+3. Avg. Alternate Routes: 0.429
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 15
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 29
+2. Sum of Vertex Degrees: 72
+3. Avg. Alternate Routes: 0.250
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 14
+2. Sum of Vertex Degrees: 40
+3. Avg. Alternate Routes: 0.462
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 16
+2. Sum of Vertex Degrees: 41
+3. Avg. Alternate Routes: 0.333
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 5
+2. Sum of Vertex Degrees: 18
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 23
+2. Sum of Vertex Degrees: 61
+3. Avg. Alternate Routes: 0.364
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 9
+2. Sum of Vertex Degrees: 27
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 15
+2. Sum of Vertex Degrees: 39
+3. Avg. Alternate Routes: 0.429
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 6
+2. Sum of Vertex Degrees: 19
+3. Avg. Alternate Routes: 0.600
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 20
+2. Sum of Vertex Degrees: 53
+3. Avg. Alternate Routes: 0.368
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 9
+2. Sum of Vertex Degrees: 26
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 19
+2. Sum of Vertex Degrees: 53
+3. Avg. Alternate Routes: 0.278
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 3
+2. Sum of Vertex Degrees: 9
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 23
+2. Sum of Vertex Degrees: 58
+3. Avg. Alternate Routes: 0.364
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 14
+2. Sum of Vertex Degrees: 39
+3. Avg. Alternate Routes: 0.154
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 12
+2. Sum of Vertex Degrees: 35
+3. Avg. Alternate Routes: 0.545
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 19
+2. Sum of Vertex Degrees: 51
+3. Avg. Alternate Routes: 0.111
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 16
+2. Sum of Vertex Degrees: 45
+3. Avg. Alternate Routes: 0.067
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 16
+2. Sum of Vertex Degrees: 45
+3. Avg. Alternate Routes: 0.133
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 16
+2. Sum of Vertex Degrees: 47
+3. Avg. Alternate Routes: 0.067
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 11
+2. Sum of Vertex Degrees: 31
+3. Avg. Alternate Routes: 0.400
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 9
+2. Sum of Vertex Degrees: 25
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 9
+2. Sum of Vertex Degrees: 29
+3. Avg. Alternate Routes: 0.625
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 9
+2. Sum of Vertex Degrees: 30
+3. Avg. Alternate Routes: 0.875
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 13
+2. Sum of Vertex Degrees: 36
+3. Avg. Alternate Routes: 0.500
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 13
+2. Sum of Vertex Degrees: 36
+3. Avg. Alternate Routes: 0.167
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 10
+2. Sum of Vertex Degrees: 29
+3. Avg. Alternate Routes: 0.222
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 11
+2. Sum of Vertex Degrees: 32
+3. Avg. Alternate Routes: 0.200
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 13
+2. Sum of Vertex Degrees: 34
+3. Avg. Alternate Routes: 0.417
+Backtracks Performed: 0
+========================================
+
+========================================
+SIMULATION METRICS
+========================================
+1. Route Length (Hops): 24
+2. Sum of Vertex Degrees: 62
+3. Avg. Alternate Routes: 0.304
+Backtracks Performed: 0
+========================================

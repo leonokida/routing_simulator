@@ -1,6 +1,6 @@
 # The script that tests the routing algorithms on real Internet topologies
 # Author: Leon Okida
-# Last modification: 02/01/2026
+# Last modification: 02/03/2026
 
 from routing_sim.routing_algorithms.max_flow_routing import MaxFlowRouting
 from routing_sim.routing_algorithms.probabilistic_max_flow_routing import ProbabilisticMaxFlowRouting
@@ -15,6 +15,7 @@ from routing_sim.topology_generation import read_graph, remove_low_connectivity_
 
 import sys
 import random
+import copy
 
 # ---------------- Utils ----------------
 
@@ -38,6 +39,8 @@ SAMPLE_SIZE = 30
 trips = sample_non_edges(topology, SAMPLE_SIZE)
 
 # Factories to avoid reusing instances on more than one execution
+arbo_algo = ArborescenceRouting()
+arbo_algo.compute_arborescence_packing(topology)
 algorithm_factories = [
     lambda: DijsktraRouting(),
     lambda: MaxFlowRouting(0.2),
@@ -46,7 +49,7 @@ algorithm_factories = [
     lambda: ProbabilisticMaxFlowRouting(0.5, 0.1),
     lambda: ProbabilisticMaxFlowRouting(1, 0.1),
     lambda: ProbabilisticMaxFlowRouting(2, 0.1),
-    lambda: ArborescenceRouting(),
+    lambda: copy.deepcopy(arbo_algo),
 ]
 
 engine_factories = {
@@ -74,10 +77,6 @@ for make_algorithm in algorithm_factories:
                 break
         engine = engine_class(network)
 
-        # Arborescence Routing Setup
-        if algorithm.name == "Arborescence Routing":
-            algorithm.compute_arborescence_packing(network.topology)
-
         # Routes without failure
         _, route = engine.simulate_routing(
             u, v, algorithm,
@@ -86,7 +85,7 @@ for make_algorithm in algorithm_factories:
         )
 
         if route is None or len(route) < 3:
-            print("deu algum erro, investigar:")
+            print(f"Error in: {u},{v}")
             print(f"{u}, {v}")
             continue
 
@@ -96,8 +95,13 @@ for make_algorithm in algorithm_factories:
 
         engine.add_edge_failure(edge_to_fail)
 
-        engine.simulate_routing(
+        _, route = engine.simulate_routing(
            u, v, algorithm,
            f"{u}-{v} with failure on {edge_to_fail[0]}-{edge_to_fail[1]}",
            file_name
         )
+
+        if route is None or len(route) < 3:
+            print(f"Error in: {u},{v}")
+            print(f"{u}, {v}")
+            continue
