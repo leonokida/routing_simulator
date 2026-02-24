@@ -1,6 +1,6 @@
 # Simulates routing between two routers in a network using FRR
 # Author: Leon Okida
-# Last modification: 02/01/2026
+# Last modification: 02/23/2026
 
 from routing_sim.simulation_engine.interface import SimulationEngine
 from routing_sim.network import Network
@@ -50,8 +50,6 @@ class FRRSimulationEngine(SimulationEngine):
             # Returns successful routing or tries the next option
             if success:
                 return True
-            else:
-                self.metrics.log_failure(source_router_name, next_hop)
 
         # If no next hop is available, it backtracks
         parent_router = packet.path[-2] if len(packet.path) > 1 else ""

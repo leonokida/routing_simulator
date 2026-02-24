@@ -1,6 +1,6 @@
 # Tools for logging routing messages and calculating path metrics
 # Author: Leon Okida
-# Last modification: 01/27/2026
+# Last modification: 02/23/2026
 
 import networkx as nx
 from routing_sim.packet import Packet
@@ -11,6 +11,7 @@ import csv
 class RoutingMetrics:
     def __init__(self, debug_print: bool = True):
         self.logs = []
+        self.found_failures = []
         self.backtrack_counter = 0
         self.debug_print = debug_print
 
@@ -24,6 +25,7 @@ class RoutingMetrics:
     def log_failure(self, router_name: str | int, failed_next_hop: str | int):
         # Logs the impossibility of routing through a router
         log_entry = f"[Router {router_name}]: routing through {failed_next_hop} failed. Trying next option."
+        self.found_failures.append((router_name, failed_next_hop))
         self.logs.append(log_entry)
         if self.debug_print:
             print(log_entry)
@@ -97,6 +99,19 @@ class RoutingMetrics:
             print(f"3. Avg. Alternate Routes: {avg_alternate_paths:.3f}")
         else:
             print("3. Avg. Alternate Routes: N/A (Route too short)")
+
+        # 4. Stretch
+        graph_with_failures = global_topology.copy()
+        for u, v in self.found_failures:
+            if graph_with_failures.has_edge(u, v):
+                graph_with_failures.remove_edge(u, v)
+        
+        min_possible_dist = nx.shortest_path_length(graph_with_failures, packet.origin, packet.destination)
+        stretch = route_length - min_possible_dist
+        stretch_ratio = route_length / min_possible_dist if min_possible_dist > 0 else 1.0
+
+        print(f"4. Stretch (Absolute): {stretch}")
+        print(f"5. Stretch (Ratio): {stretch_ratio}")
         
         print(f"Backtracks Performed: {self.backtrack_counter}")
         print("="*40)
@@ -130,6 +145,16 @@ class RoutingMetrics:
                 total_alternate_paths += self._get_number_of_paths_for_node(temp_graph, node, dest)
             avg_alternate_paths = total_alternate_paths / len(nodes_to_check)
 
+        # Calculate stretch
+        graph_with_failures = global_topology.copy()
+        for u, v in self.found_failures:
+            if graph_with_failures.has_edge(u, v):
+                graph_with_failures.remove_edge(u, v)
+        
+        min_possible_dist = nx.shortest_path_length(graph_with_failures, packet.origin, packet.destination)
+        stretch = route_length - min_possible_dist
+        stretch_ratio = route_length / min_possible_dist if min_possible_dist > 0 else 1.0
+
         # 2. CSV Configuration
         headers = [
             "Experiment_Name",
@@ -137,7 +162,9 @@ class RoutingMetrics:
             "Route_Length", 
             "Total_Degree", 
             "Avg_Alternate_Routes", 
-            "Backtracks"
+            "Backtracks",
+            "Stretch",
+            "Stretch_Ratio"
         ]
         
         row = {
@@ -146,7 +173,9 @@ class RoutingMetrics:
             "Route_Length": route_length,
             "Total_Degree": total_degree,
             "Avg_Alternate_Routes": round(avg_alternate_paths, 3),
-            "Backtracks": self.backtrack_counter
+            "Backtracks": self.backtrack_counter,
+            "Stretch": stretch,
+            "Stretch_Ratio": stretch_ratio
         }
 
         # 3. File Writing Logic
