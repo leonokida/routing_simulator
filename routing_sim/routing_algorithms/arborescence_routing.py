@@ -1,6 +1,6 @@
 # The arborecence-based routing algorithm, using a precomputed arborescence packing
 # Author: Leon Okida
-# Last modification: 02/03/2026
+# Last modification: 05/02/2026
 
 import networkx as nx
 from routing_sim.routing_algorithms.interface import RoutingAlgorithm
@@ -9,7 +9,7 @@ import copy
 class ArborescenceRouting(RoutingAlgorithm):
     def __init__(self):
         super().__init__("Arborescence Routing")
-        self.arborescence_packing = dict()
+        self.arborescence_packing = list()
         self.number_of_arborescences = 0
         self.arborescence_index = 0
 
@@ -88,22 +88,20 @@ class ArborescenceRouting(RoutingAlgorithm):
         
         return arborescences
 
-    def compute_arborescence_packing(self, topology: nx.Graph) -> None:
+    def _compute_arborescence_packing(self, root: str | int, topology: nx.Graph) -> None:
         # Computes the arborescence packing
         connectivity_c = nx.edge_connectivity(topology)
         self.number_of_arborescences = connectivity_c
         print(f"The edge-connectivity of the topology is {connectivity_c}")
 
-        # Iterate over every possible destination d
-        for d in topology.nodes:
-            d_arborescences = self._compute_rooted_arborescences(d, connectivity_c, topology)
-            self.arborescence_packing[d] = d_arborescences
+        # Creates arborescences
+        d_arborescences = self._compute_rooted_arborescences(root, connectivity_c, topology)
+        self.arborescence_packing = d_arborescences
 
-    def calculate_next_hop(self, source: str | int, dest: str | int, global_topology: nx.Graph, visited_names: set) -> list:      
-        # Calculates the next hop based on the arborescences
-        if dest not in self.arborescence_packing:
-            return None
+    def initial_setup(self, source: str | int, dest: str | int, global_topology: nx.Graph) -> None:
+        self._compute_arborescence_packing(dest, global_topology)
 
+    def calculate_next_hop(self, source: str | int, dest: str | int, global_topology: nx.Graph, visited_names: set) -> str | int:    
         # Returns the successor of source in the arborescence corresponding to dest (it's the next hop in the path to dest)
         next_hop_list = []
         for i in range(self.number_of_arborescences):
@@ -111,13 +109,8 @@ class ArborescenceRouting(RoutingAlgorithm):
                 next_hop_list.append(next_hop)
                 break
 
-        return next_hop_list
+        return next_hop_list[self.arborescence_index] if self.arborescence_index < self.number_of_arborescences else None
     
-    def switch_arborescence(self):
+    def handle_failure(self, source, dest):
+        # Switches arborescence
         self.arborescence_index += 1
-
-    def get_arborescence_index(self):
-        return self.arborescence_index
-    
-    def reset_arborescence_index(self):
-        self.arborescence_index = 0
