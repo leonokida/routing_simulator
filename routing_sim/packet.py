@@ -13,8 +13,3 @@ class Packet:
         # Adds the router name to the current path and visited routers list
         self.path.append(router_name)
         self.visited.add(router_name)
-
-    def record_backtracking_hop(self):
-        # Removes the router from the current path
-        self.path.pop()
-    
