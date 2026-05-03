@@ -17,4 +17,4 @@ class Packet:
         self.visited.add(router_name)
 
     def record_backtrack(self):
-        self.final_route.pop()
+        self.final_route = self.final_route[:-2]
