@@ -21,7 +21,7 @@ if __name__ == '__main__':
     print("Topology Nodes:", list(nx_graph.nodes))
 
     # --- Step 2: Define and Select Routing Algorithm ---
-    ALGORITHM = DijkstraRouting()
+    ALGORITHM = MaxFlowRouting(0.8)
     print(f"Algorithm Selected: {ALGORITHM.name}")
 
     # --- Step 3 & 4: Create Network and Assign Algorithm ---
