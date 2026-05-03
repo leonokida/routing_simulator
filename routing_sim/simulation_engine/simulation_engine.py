@@ -1,6 +1,6 @@
 # Simulates routing between two routers in a network using FRR
 # Author: Leon Okida
-# Last modification: 05/02/2026
+# Last modification: 05/03/2026
 
 from routing_sim.network import Network
 from routing_sim.router import Router
@@ -25,6 +25,11 @@ class SimulationEngine:
         # Records visit
         packet.record_hop(source_router_name)
         dest = packet.destination
+
+        # Routing successful
+        if source_router_name == dest:
+            self.metrics.log_success(packet.path)
+            return True
         
         # Loop implements FRR, tries all the available routing options
         while True:
@@ -41,21 +46,16 @@ class SimulationEngine:
                     continue
             
                 self.metrics.log_forwarding(source_router_name, next_hop)
-                success = self._find_route_recursive(packet, next_hop, algorithm)
-            
-                if success:
-                    return True
-                else:
-                    if self.allow_backtracking:
-                        algorithm.handle_failure(source_router_name, dest)
-                    continue
+                return self._find_route_recursive(packet, next_hop, algorithm)
             else:
                 break
 
-        # No next hop available
-        if self.allow_backtracking:
-            parent_router = packet.path[-2] if len(packet.path) > 1 else ""
-            self.metrics.log_backtrack(source_router_name, parent_router)
+        # No next hop available: backtracks if possible
+        previous_router = packet.final_route[-2] if len(packet.final_route) > 1 else ""
+        if self.allow_backtracking and previous_router != "":
+            self.metrics.log_backtrack(source_router_name, previous_router)
+            return self._find_route_recursive(packet, previous_router, algorithm)
+
         return False
 
     def simulate_routing(self, source: str | int, dest: str | int, algorithm: RoutingAlgorithm, experiment_name: str, file_path: str) -> tuple:
