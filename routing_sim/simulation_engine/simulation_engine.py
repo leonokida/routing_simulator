@@ -28,7 +28,8 @@ class SimulationEngine:
 
         # Routing successful
         if source_router_name == dest:
-            self.metrics.log_success(packet.path)
+            self.metrics.log_success(packet.final_route)
+            self.metrics.log_hop_history(packet.hop_history)
             return True
         
         # Loop implements FRR, tries all the available routing options
@@ -83,7 +84,7 @@ class SimulationEngine:
                 global_topology=self.network.topology,
                 failed_edges = self.failed_edges
             )
-        return success, packet.path
+        return success, packet
 
     def add_edge_failure(self, edge: tuple) -> None:
         u, v = edge
