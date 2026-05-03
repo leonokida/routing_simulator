@@ -1,6 +1,6 @@
 # The class that represents a Router
 # Author: Leon Okida
-# Last modification: 01/26/2026
+# Last modification: 05/02/2026
 
 from routing_sim.packet import Packet
 from routing_sim.routing_algorithms.interface import RoutingAlgorithm 
@@ -10,7 +10,7 @@ class Router:
     def __init__(self, name): 
         self.name = name
 
-    def get_next_hop_candidates(self, packet: Packet, global_topology: nx.Graph, routing_algorithm: RoutingAlgorithm) -> list:
+    def get_next_hop(self, packet: Packet, global_topology: nx.Graph, routing_algorithm: RoutingAlgorithm) -> str | int:
         # Returns the list of next hop candidates based on the routing algorithm    
         return routing_algorithm.calculate_next_hop(
             source=self.name,

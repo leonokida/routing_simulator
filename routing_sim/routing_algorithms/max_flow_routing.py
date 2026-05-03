@@ -1,6 +1,6 @@
 # The MaxFlowRouting algorithm
 # Author: Leon Okida
-# Last modification: 02/01/2026
+# Last modification: 05/03/2026
 
 import networkx as nx
 from routing_sim.routing_algorithms.interface import RoutingAlgorithm
@@ -11,38 +11,47 @@ class MaxFlowRouting(RoutingAlgorithm):
         super().__init__(f"MaxFlowRouting with lambda={lambda_val}")
         self.weight_mf = lambda_val
         self.weight_sp = (1 - lambda_val) * -1
+    
+    def initial_setup(self, source, dest, global_topology):
+        self.routing = dict()
 
-    def calculate_next_hop(self, source: str | int, dest: str | int, global_topology: nx.Graph, visited_names: set) -> list:
-        # Calculates and returns a list of next hops sorted by score (descending)
-        scored_neighbors = []
-        
-        neighbors = [n for n in global_topology.neighbors(source) if n != source and n not in visited_names]
-        if not neighbors:
-            return []
-
-        temp_graph = global_topology.copy()
-        temp_graph.remove_node(source)
-
-        for neighbor in neighbors:
-            sp_score = utils.get_shortest_path_length(neighbor, dest, temp_graph)
-            if sp_score == float('inf'):
-                continue 
-
-            mf_score = utils.get_max_flow_value(neighbor, dest, temp_graph)
+    def compute_routes(self, source: str | int, dest: str | int, global_topology: nx.Graph) -> None:
+        if source not in self.routing:
+            self.routing[source] = dict()
+            # Orders neighbors by score (descending)
+            scored_neighbors = []
             
-            # Γ = (λ * MF) + (-(1-λ) * SP)
-            score = (self.weight_mf * mf_score) + (self.weight_sp * sp_score)
-            scored_neighbors.append((neighbor, score))
+            neighbors = [n for n in global_topology.neighbors(source) if n != source]
+            if not neighbors:
+                return []
 
-        # Sort the list of tuples by score in descending order
-        scored_neighbors.sort(key=lambda x: x[1], reverse=True)
-        return [hop[0] for hop in scored_neighbors]
+            g_prime = global_topology.copy()
+            g_prime.remove_node(source)
+
+            for neighbor in neighbors:
+                sp_score = utils.get_shortest_path_length(neighbor, dest, g_prime)
+                if sp_score == float('inf'):
+                    continue 
+
+                mf_score = utils.get_max_flow_value(neighbor, dest, g_prime)
+                
+                # Γ = (λ * MF) + (-(1-λ) * SP)
+                score = (self.weight_mf * mf_score) + (self.weight_sp * sp_score)
+                scored_neighbors.append((neighbor, score))
+
+            # Sort the list of tuples by score in descending order
+            scored_neighbors.sort(key=lambda x: x[1], reverse=True)
+            self.routing[source]["index"] = 0
+            self.routing[source]["neighbors"] = [neighbor[0] for neighbor in scored_neighbors]
     
-    def switch_arborescence(self) -> None:
-        raise NotImplementedError
+    def calculate_next_hop(self, source: str | int, dest: str | int, global_topology: nx.Graph, visited_names: set) -> str | int:
+        self.compute_routes(source, dest, global_topology)
+        index = self.routing[source]["index"]
+        if index < len(self.routing[source]["neighbors"]):
+            for neighbor in self.routing[source]["neighbors"][index:]:
+                if neighbor not in visited_names:
+                    return neighbor
+        return None
     
-    def get_arborescence_index(self):
-        raise NotImplementedError
-    
-    def reset_arborescence_index(self):
-        raise NotImplementedError
+    def handle_failure(self, source, dest):
+        self.routing[source]["index"] += 1
