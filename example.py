@@ -5,15 +5,16 @@ from routing_sim.routing_algorithms.arborescence_routing import ArborescenceRout
 from routing_sim.network import Network
 from routing_sim.simulation_engine.simulation_engine import SimulationEngine
 from routing_sim.topology_generation import read_graph, random_graph, remove_low_connectivity_vertices
+import random
 
 def create_example_graph():
-    G = read_graph('topologies/geant.txt')
+    G = random_graph(100, 0.3)
     return G
 
 if __name__ == '__main__':
     # --- Configuration ---
-    SOURCE = 'lis'
-    DESTINATION = 'par'
+    SOURCE = 0
+    DESTINATION = 90
     LAMBDA_VALUE = 0.8
     
     # --- Step 1: Create Topology (Graph) ---
@@ -21,7 +22,7 @@ if __name__ == '__main__':
     print("Topology Nodes:", list(nx_graph.nodes))
 
     # --- Step 2: Define and Select Routing Algorithm ---
-    ALGORITHM = MaxFlowRouting(0.8)
+    ALGORITHM = ArborescenceRouting()
     print(f"Algorithm Selected: {ALGORITHM.name}")
 
     # --- Step 3 & 4: Create Network and Assign Algorithm ---
@@ -32,8 +33,12 @@ if __name__ == '__main__':
     print("Network Initialization Complete.")
     
     # Run the simulation
-    engine.add_edge_failure(("bil", "par"))
-    success, packet = engine.simulate_routing(SOURCE, DESTINATION, ALGORITHM, "teste", "teste.csv")
+    success, packet = engine.simulate_routing(SOURCE, DESTINATION, ALGORITHM, "test without failures", "test.csv")
+    route = packet.final_route
+    idx = random.randrange(len(route) - 1)
+    edge_to_fail = (route[idx], route[idx + 1])
+    engine.add_edge_failure(edge_to_fail)
+    success, packet = engine.simulate_routing(SOURCE, DESTINATION, ALGORITHM, "test with failures", "test.csv")
     
     if success:
         print("\n--- Final Route Found ---")

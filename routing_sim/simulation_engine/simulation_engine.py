@@ -19,7 +19,7 @@ class SimulationEngine:
     def _find_route_iterative(self, packet: Packet, start_router_name: str | int, algorithm: RoutingAlgorithm):
         current_router_name = start_router_name
         
-        while current_router_name:
+        while current_router_name != None:
             source_router: Router = self.network.routers.get(current_router_name)
             if not source_router:
                 return False
