@@ -8,7 +8,7 @@ from routing_sim.topology_generation import read_graph, random_graph, remove_low
 import random
 
 def create_example_graph():
-    G = random_graph(100, 0.3)
+    G = random_graph(120, 0.3)
     return G
 
 if __name__ == '__main__':

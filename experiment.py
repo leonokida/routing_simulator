@@ -1,6 +1,6 @@
 # Experiment comparing MaxFlowRouting, Arborescence Routing and the algorithm based on Dijkstra's
 # Author: Leon Okida
-# Last modification: 05/03/2026
+# Last modification: 05/09/2026
 
 from routing_sim.routing_algorithms.max_flow_routing import MaxFlowRouting
 from routing_sim.routing_algorithms.dijkstra_routing import DijkstraRouting
@@ -36,21 +36,21 @@ def run_experiment(topology_name: str, filename: str, sample_size: int = 30):
         "Geant": lambda: remove_low_connectivity_vertices(read_graph("topologies/geant.txt")),
         "Internet2": lambda: remove_low_connectivity_vertices(read_graph("topologies/internet2.txt")),
         "RNP": lambda: remove_low_connectivity_vertices(read_graph("topologies/rnp.txt")),
+        "Random_80_0.1": lambda: random_graph(80, 0.1),
+        "Random_80_0.2": lambda: random_graph(80, 0.2),
+        "Random_80_0.3": lambda: random_graph(80, 0.3),
+        "Random_100_0.1": lambda: random_graph(100, 0.1),
+        "Random_100_0.2": lambda: random_graph(100, 0.2),
         "Random_100_0.3": lambda: random_graph(100, 0.3),
-        "Random_100_0.5": lambda: random_graph(100, 0.5),
-        "Random_100_0.7": lambda: random_graph(100, 0.7),
-        "Random_150_0.3": lambda: random_graph(150, 0.3),
-        "Random_150_0.5": lambda: random_graph(150, 0.5),
-        "Random_150_0.7": lambda: random_graph(150, 0.7),
-        "Random_200_0.3": lambda: random_graph(200, 0.3),
-        "Random_200_0.5": lambda: random_graph(200, 0.5),
-        "Random_200_0.7": lambda: random_graph(200, 0.7),
+        "Random_120_0.1": lambda: random_graph(120, 0.1),
+        "Random_120_0.2": lambda: random_graph(120, 0.2),
+        "Random_120_0.3": lambda: random_graph(120, 0.3),
+        "Small_World_80": lambda: small_world_graph(80),
         "Small_World_100": lambda: small_world_graph(100),
-        "Small_World_150": lambda: small_world_graph(150),
-        "Small_World_200": lambda: small_world_graph(200),
+        "Small_World_120": lambda: small_world_graph(120),
+        "Preferential_Attachment_80": lambda: preferential_attachment_graph(80),
         "Preferential_Attachment_100": lambda: preferential_attachment_graph(100),
-        "Preferential_Attachment_150": lambda: preferential_attachment_graph(150),
-        "Preferential_Attachment_200": lambda: preferential_attachment_graph(200)      
+        "Preferential_Attachment_120": lambda: preferential_attachment_graph(120)      
     }
 
     algorithm_factories = [
@@ -112,37 +112,37 @@ if __name__ == "__main__":
     print("RNP", flush=True)
 
     # Random Graphs with varied connectivity
+    run_experiment("Random_80_0.1", "results/random_80_01.csv", 30)
+    print("Random 80 0.1", flush=True)
+    run_experiment("Random_80_0.2", "results/random_80_02.csv", 30)
+    print("Random 80 0.2", flush=True)
+    run_experiment("Random_80_0.3", "results/random_80_03.csv", 30)
+    print("Random 80 0.3", flush=True)
+    run_experiment("Random_100_0.1", "results/random_100_01.csv", 30)
+    print("Random 100 0.1", flush=True)
+    run_experiment("Random_100_0.2", "results/random_100_02.csv", 30)
+    print("Random 100 0.2", flush=True)
     run_experiment("Random_100_0.3", "results/random_100_03.csv", 30)
     print("Random 100 0.3", flush=True)
-    run_experiment("Random_100_0.5", "results/random_100_05.csv", 30)
-    print("Random 100 0.5", flush=True)
-    run_experiment("Random_100_0.7", "results/random_100_07.csv", 30)
-    print("Random 100 0.7", flush=True)
-    run_experiment("Random_150_0.3", "results/random_150_03.csv", 30)
-    print("Random 150 0.3", flush=True)
-    run_experiment("Random_150_0.5", "results/random_150_05.csv", 30)
-    print("Random 150 0.5", flush=True)
-    run_experiment("Random_150_0.7", "results/random_150_07.csv", 30)
-    print("Random 150 0.7", flush=True)
-    run_experiment("Random_200_0.3", "results/random_200_03.csv", 30)
-    print("Random 200 0.3", flush=True)
-    run_experiment("Random_200_0.5", "results/random_200_05.csv", 30)
-    print("Random 200 0.5", flush=True)
-    run_experiment("Random_200_0.7", "results/random_200_07.csv", 30)
-    print("Random 200 0.7", flush=True)
+    run_experiment("Random_120_0.1", "results/random_120_01.csv", 30)
+    print("Random 120 0.1", flush=True)
+    run_experiment("Random_120_0.2", "results/random_120_02.csv", 30)
+    print("Random 120 0.2", flush=True)
+    run_experiment("Random_120_0.3", "results/random_120_03.csv", 30)
+    print("Random 120 0.3", flush=True)
 
     # Small World Graphs
+    run_experiment("Small_World_80", "results/small_world_80.csv", 30)
+    print("Small 80", flush=True)
     run_experiment("Small_World_100", "results/small_world_100.csv", 30)
     print("Small 100", flush=True)
-    run_experiment("Small_World_150", "results/small_world_150.csv", 30)
-    print("Small 150", flush=True)
-    run_experiment("Small_World_200", "results/small_world_200.csv", 30)
-    print("Small 200", flush=True)
+    run_experiment("Small_World_120", "results/small_world_120.csv", 30)
+    print("Small 120", flush=True)
 
     # Preferential Attachment Graphs
+    run_experiment("Preferential_Attachment_80", "results/pref_att_80.csv", 30)
+    print("Preferential 80", flush=True)
     run_experiment("Preferential_Attachment_100", "results/pref_att_100.csv", 30)
     print("Preferential 100", flush=True)
-    run_experiment("Preferential_Attachment_150", "results/pref_att_150.csv", 30)
-    print("Preferential 150", flush=True)
-    run_experiment("Preferential_Attachment_200", "results/pref_att_200.csv", 30)
-    print("Preferential 200", flush=True)
+    run_experiment("Preferential_Attachment_120", "results/pref_att_120.csv", 30)
+    print("Preferential 120", flush=True)
