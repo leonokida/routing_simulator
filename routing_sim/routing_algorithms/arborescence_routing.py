@@ -84,7 +84,7 @@ class ArborescenceRouting(RoutingAlgorithm):
                 raise Exception(f"Failed to create a true #{j} {r}-rooted arborescence")
 
             arborescences.append(arbo.reverse())
-            print(f"Created #{j} {r}-rooted arborescence")
+            print(f"Created #{j} {r}-rooted arborescence", flush=True)
         
         return arborescences
 

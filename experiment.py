@@ -36,21 +36,21 @@ def run_experiment(topology_name: str, filename: str, sample_size: int = 30):
         "Geant": lambda: remove_low_connectivity_vertices(read_graph("topologies/geant.txt")),
         "Internet2": lambda: remove_low_connectivity_vertices(read_graph("topologies/internet2.txt")),
         "RNP": lambda: remove_low_connectivity_vertices(read_graph("topologies/rnp.txt")),
-        "Random_80_0.1": lambda: random_graph(80, 0.1),
-        "Random_80_0.2": lambda: random_graph(80, 0.2),
-        "Random_80_0.3": lambda: random_graph(80, 0.3),
-        "Random_100_0.1": lambda: random_graph(100, 0.1),
-        "Random_100_0.2": lambda: random_graph(100, 0.2),
-        "Random_100_0.3": lambda: random_graph(100, 0.3),
-        "Random_120_0.1": lambda: random_graph(120, 0.1),
-        "Random_120_0.2": lambda: random_graph(120, 0.2),
-        "Random_120_0.3": lambda: random_graph(120, 0.3),
-        "Small_World_80": lambda: small_world_graph(80),
-        "Small_World_100": lambda: small_world_graph(100),
-        "Small_World_120": lambda: small_world_graph(120),
-        "Preferential_Attachment_80": lambda: preferential_attachment_graph(80),
-        "Preferential_Attachment_100": lambda: preferential_attachment_graph(100),
-        "Preferential_Attachment_120": lambda: preferential_attachment_graph(120)      
+        "Random_80_0.1": lambda: remove_low_connectivity_vertices(random_graph(80, 0.1)),
+        "Random_80_0.2": lambda: remove_low_connectivity_vertices(random_graph(80, 0.2)),
+        "Random_80_0.3": lambda: remove_low_connectivity_vertices(random_graph(80, 0.3)),
+        "Random_100_0.1": lambda: remove_low_connectivity_vertices(random_graph(100, 0.1)),
+        "Random_100_0.2": lambda: remove_low_connectivity_vertices(random_graph(100, 0.2)),
+        "Random_100_0.3": lambda: remove_low_connectivity_vertices(random_graph(100, 0.3)),
+        "Random_120_0.1": lambda: remove_low_connectivity_vertices(random_graph(120, 0.1)),
+        "Random_120_0.2": lambda: remove_low_connectivity_vertices(random_graph(120, 0.2)),
+        "Random_120_0.3": lambda: remove_low_connectivity_vertices(random_graph(120, 0.3)),
+        "Small_World_80": lambda: remove_low_connectivity_vertices(small_world_graph(80)),
+        "Small_World_100": lambda: remove_low_connectivity_vertices(small_world_graph(100)),
+        "Small_World_120": lambda: remove_low_connectivity_vertices(small_world_graph(120)),
+        "Preferential_Attachment_80": lambda: remove_low_connectivity_vertices(preferential_attachment_graph(80)),
+        "Preferential_Attachment_100": lambda: remove_low_connectivity_vertices(preferential_attachment_graph(100)),
+        "Preferential_Attachment_120": lambda: remove_low_connectivity_vertices(preferential_attachment_graph(120))      
     }
 
     algorithm_factories = [
@@ -73,14 +73,14 @@ def run_experiment(topology_name: str, filename: str, sample_size: int = 30):
             engine = SimulationEngine(network=network, allow_backtracking=allow_backtracking, debug_print=False)
 
             # Routes without failure
-            _, packet = engine.simulate_routing(
+            success, packet = engine.simulate_routing(
                 origin, destination, algorithm,
                 f"{origin}-{destination} without failures",
                 filename
             )
             route = packet.final_route
 
-            if route is None or len(route) < 3:
+            if not success:
                 print(f"Routing failed for: {origin},{destination}")
                 continue
 
