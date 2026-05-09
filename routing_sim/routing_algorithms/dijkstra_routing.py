@@ -1,6 +1,6 @@
 # The routing algorithm based on Dijkstra's algorithm
 # Author: Leon Okida
-# Last modification: 05/03/2026
+# Last modification: 05/09/2026
 
 import networkx as nx
 from routing_sim.routing_algorithms.interface import RoutingAlgorithm
@@ -9,9 +9,10 @@ import routing_sim.routing_algorithms.utils as utils
 class DijkstraRouting(RoutingAlgorithm):
     def __init__(self):
         super().__init__(f"Algorithm based on Dijkstra's")
+        self.routing = dict()
     
     def initial_setup(self, source, dest, global_topology):
-        self.routing = dict()
+        return
 
     def compute_routes(self, source: str | int, dest: str | int, global_topology: nx.Graph) -> None:
         if source not in self.routing:
