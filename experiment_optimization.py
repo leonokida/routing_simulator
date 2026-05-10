@@ -15,6 +15,8 @@ from routing_sim.topology_generation import (
 
 import random
 import networkx as nx
+import csv
+import os
 
 def sample_non_edges(G: nx.Graph, k: int):
     nodes = list(G.nodes())
@@ -75,55 +77,84 @@ def run_experiment(topology_name: str, filename: str, sample_size: int = 30, p: 
             success, _ = engine.simulate_routing(
                 origin, destination, algorithm,
                 f"{origin}-{destination}",
-                filename
+                f"results_optimization/{filename}"
             )
             if not success:
                 print(f"Routing failed for: {origin},{destination}")
                 continue
 
+        headers = [
+            "Topology_Name",
+            "Num_Vertices", 
+            "Num_Edges", 
+            "Edge_Connectivity",
+            "Diameter", 
+            "Avg_Degree",
+            "Avg_Shortest_Path_Length"
+        ]
+        
+        row = {
+            "Topology_Name": topology_name,
+            "Num_Vertices": topology.number_of_nodes,
+            "Num_Edges": topology.number_of_edges,
+            "Edge_Connectivity": nx.edge_connectivity(topology),
+            "Diameter": nx.diameter(topology),
+            "Avg_Degree": 2 * topology.number_of_edges() / float(topology.number_of_nodes()),
+            "Avg_Shortest_Path_Length": nx.average_shortest_path_length(topology)
+        }
+
+        # Writes topology information
+        file_path = f"topology_info/{filename}"
+        file_exists = os.path.isfile(file_path) and os.path.getsize(file_path) > 0
+        with open(file_path, mode='a', newline='', encoding='utf-8') as f:
+            writer = csv.DictWriter(f, fieldnames=headers)
+            if not file_exists:
+                writer.writeheader()
+            writer.writerow(row)
+
 if __name__ == "__main__":
     # Real Topologies
-    run_experiment("ChinaNet", "results_optimization/chinanet.csv", 10000)
+    run_experiment("ChinaNet", "chinanet.csv", 10000)
     print("ChinaNet", flush=True)
-    run_experiment("Geant", "results_optimization/geant.csv", 10000)
+    run_experiment("Geant", "geant.csv", 10000)
     print("Geant", flush=True)
-    run_experiment("Internet2", "results_optimization/internet2.csv", 10000)
+    run_experiment("Internet2", "internet2.csv", 10000)
     print("Internet2", flush=True)
-    run_experiment("RNP", "results_optimization/rnp.csv", 10000)
+    run_experiment("RNP", "rnp.csv", 10000)
     print("RNP", flush=True)
 
     # Random Graphs with varied connectivity
-    run_experiment("Random_80_0.1", "results_optimization/random_80_01.csv", 10000)
+    run_experiment("Random_80_0.1", "random_80_01.csv", 10000)
     print("Random 80 0.1", flush=True)
-    run_experiment("Random_80_0.2", "results_optimization/random_80_02.csv", 10000)
+    run_experiment("Random_80_0.2", "random_80_02.csv", 10000)
     print("Random 80 0.2", flush=True)
-    run_experiment("Random_80_0.3", "results_optimization/random_80_03.csv", 10000)
+    run_experiment("Random_80_0.3", "random_80_03.csv", 10000)
     print("Random 80 0.3", flush=True)
-    run_experiment("Random_100_0.1", "results_optimization/random_100_01.csv", 10000)
+    run_experiment("Random_100_0.1", "random_100_01.csv", 10000)
     print("Random 100 0.1", flush=True)
-    run_experiment("Random_100_0.2", "results_optimization/random_100_02.csv", 10000)
+    run_experiment("Random_100_0.2", "random_100_02.csv", 10000)
     print("Random 100 0.2", flush=True)
-    run_experiment("Random_100_0.3", "results_optimization/random_100_03.csv", 10000)
+    run_experiment("Random_100_0.3", "random_100_03.csv", 10000)
     print("Random 100 0.3", flush=True)
-    run_experiment("Random_120_0.1", "results_optimization/random_120_01.csv", 10000)
+    run_experiment("Random_120_0.1", "random_120_01.csv", 10000)
     print("Random 120 0.1", flush=True)
-    run_experiment("Random_120_0.2", "results_optimization/random_120_02.csv", 10000)
+    run_experiment("Random_120_0.2", "random_120_02.csv", 10000)
     print("Random 120 0.2", flush=True)
-    run_experiment("Random_120_0.3", "results_optimization/random_120_03.csv", 10000)
+    run_experiment("Random_120_0.3", "random_120_03.csv", 10000)
     print("Random 120 0.3", flush=True)
 
     # Small World Graphs
-    run_experiment("Small_World_80", "results_optimization/small_world_80.csv", 10000)
+    run_experiment("Small_World_80", "small_world_80.csv", 10000)
     print("Small 80", flush=True)
-    run_experiment("Small_World_100", "results_optimization/small_world_100.csv", 10000)
+    run_experiment("Small_World_100", "small_world_100.csv", 10000)
     print("Small 100", flush=True)
-    run_experiment("Small_World_120", "results_optimization/small_world_120.csv", 10000)
+    run_experiment("Small_World_120", "small_world_120.csv", 10000)
     print("Small 120", flush=True)
 
     # Preferential Attachment Graphs
-    run_experiment("Preferential_Attachment_80", "results_optimization/pref_att_80.csv", 10000)
+    run_experiment("Preferential_Attachment_80", "pref_att_80.csv", 10000)
     print("Preferential 80", flush=True)
-    run_experiment("Preferential_Attachment_100", "results_optimization/pref_att_100.csv", 10000)
+    run_experiment("Preferential_Attachment_100", "pref_att_100.csv", 10000)
     print("Preferential 100", flush=True)
-    run_experiment("Preferential_Attachment_120", "results_optimization/pref_att_120.csv", 10000)
+    run_experiment("Preferential_Attachment_120", "pref_att_120.csv", 10000)
     print("Preferential 120", flush=True)
