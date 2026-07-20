@@ -1,6 +1,6 @@
 # The MaxFlowRouting algorithm
 # Author: Leon Okida
-# Last modification: 05/09/2026
+# Last modification: 07/20/2026
 
 import networkx as nx
 from routing_sim.routing_algorithms.interface import RoutingAlgorithm
@@ -19,12 +19,13 @@ class MaxFlowRouting(RoutingAlgorithm):
     def compute_routes(self, source: str | int, dest: str | int, global_topology: nx.Graph) -> None:
         if source not in self.routing:
             self.routing[source] = dict()
-            # Orders neighbors by score (descending)
             scored_neighbors = []
+            self.routing[source]["index"] = 0
+            self.routing[source]["neighbors"] = []
             
             neighbors = [n for n in global_topology.neighbors(source) if n != source]
             if not neighbors:
-                return []
+                return
 
             g_prime = global_topology.copy()
             g_prime.remove_node(source)
@@ -42,7 +43,6 @@ class MaxFlowRouting(RoutingAlgorithm):
 
             # Sort the list of tuples by score in descending order
             scored_neighbors.sort(key=lambda x: x[1], reverse=True)
-            self.routing[source]["index"] = 0
             self.routing[source]["neighbors"] = [neighbor[0] for neighbor in scored_neighbors]
     
     def calculate_next_hop(self, source: str | int, dest: str | int, global_topology: nx.Graph, visited_names: set) -> str | int:

@@ -1,6 +1,6 @@
 # Simulates routing between two routers in a network using FRR
 # Author: Leon Okida
-# Last modification: 05/03/2026
+# Last modification: 07/20/2026
 
 from routing_sim.network import Network
 from routing_sim.router import Router
@@ -68,6 +68,8 @@ class SimulationEngine:
                 self.metrics.log_backtrack(current_router_name, previous_router)
                 packet.record_backtrack()
                 current_router_name = previous_router
+            else:
+                return False
 
         return False
 
