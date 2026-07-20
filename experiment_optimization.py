@@ -95,8 +95,8 @@ def run_experiment(topology_name: str, filename: str, sample_size: int = 30, p: 
         
         row = {
             "Topology_Name": topology_name,
-            "Num_Vertices": topology.number_of_nodes,
-            "Num_Edges": topology.number_of_edges,
+            "Num_Vertices": topology.number_of_nodes(),
+            "Num_Edges": topology.number_of_edges(),
             "Edge_Connectivity": nx.edge_connectivity(topology),
             "Diameter": nx.diameter(topology),
             "Avg_Degree": 2 * topology.number_of_edges() / float(topology.number_of_nodes()),
