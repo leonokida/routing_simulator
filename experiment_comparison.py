@@ -1,11 +1,12 @@
 # Experiment comparing MaxFlowRouting, Arborescence Routing and the algorithm based on Dijkstra's
 # Author: Leon Okida
-# Last modification: 05/09/2026
+# Last modification: 08/17/2026
 
 from routing_sim.routing_algorithms.max_flow_routing import MaxFlowRouting
 from routing_sim.routing_algorithms.dijkstra_routing import DijkstraRouting
 from routing_sim.routing_algorithms.arborescence_routing import ArborescenceRouting
 from routing_sim.simulation_engine.simulation_engine import SimulationEngine
+from routing_sim.simulation_engine.comparison_metrics import ComparisonMetrics
 from routing_sim.network import Network
 from routing_sim.topology_generation import (
     read_graph, 
@@ -70,11 +71,11 @@ def run_experiment(topology_name: str, filename: str, sample_size: int = 30):
             algorithm = make_algorithm()
             network = Network.from_networkx_graph(topology)
             allow_backtracking = False if algorithm.name == "Arborescence Routing" else True
-            engine = SimulationEngine(network=network, allow_backtracking=allow_backtracking, debug_print=False)
+            engine = SimulationEngine(network=network, allow_backtracking=allow_backtracking)
 
             # Routes without failure
             success, packet = engine.simulate_routing(
-                origin, destination, algorithm,
+                origin, destination, algorithm, ComparisonMetrics(False),
                 f"{origin}-{destination} without failures",
                 filename
             )
@@ -90,7 +91,7 @@ def run_experiment(topology_name: str, filename: str, sample_size: int = 30):
             engine.add_edge_failure(edge_to_fail)
 
             _, route = engine.simulate_routing(
-                origin, destination, algorithm,
+                origin, destination, algorithm, ComparisonMetrics(False),
                 f"{origin}-{destination} with failure on {edge_to_fail[0]}-{edge_to_fail[1]}",
                 filename
             )
