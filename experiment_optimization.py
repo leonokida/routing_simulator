@@ -1,10 +1,10 @@
 # Experiment testing MaxFlowRouting with different Lambdas to find the best value accross different topologies
 # Author: Leon Okida
-# Last modification: 08/17/2026
+# Last modification: 20/10/2026
 
 from routing_sim.routing_algorithms.max_flow_routing import MaxFlowRouting
 from routing_sim.simulation_engine.simulation_engine import SimulationEngine
-from routing_sim.simulation_engine.optimization_metrics import OptimizationMetrics
+from optimization_metrics import OptimizationMetrics
 from routing_sim.network import Network
 from routing_sim.topology_generation import (
     read_graph, 
