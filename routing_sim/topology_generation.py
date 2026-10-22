@@ -13,7 +13,7 @@ def random_graph(size: int, connectivity: float, max_attempts: int = 100) -> nx.
     # Generates a connected Erdos-Renyi G(n, p) graph        
     for _ in range(max_attempts):
         graph = nx.erdos_renyi_graph(size, connectivity)
-        if nx.is_connected(graph):
+        if nx.is_connected(graph) and nx.edge_connectivity(graph) >= 2:
             return _set_default_attributes(graph)
     raise ValueError("Failed to generate a connected Erdos-Renyi graph within the maximum attempts.")
 
