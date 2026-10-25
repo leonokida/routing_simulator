@@ -98,9 +98,9 @@ def generate_pyg_dataset(num_random_topologies: int = 50):
 
     # 1. Internet topologies
     internet_topos = {
-        #"ChinaNet": remove_low_connectivity_vertices(read_graph("topologies/chinanet.txt")),
-        #"Geant": remove_low_connectivity_vertices(read_graph("topologies/geant.txt")),
-        #"Internet2": remove_low_connectivity_vertices(read_graph("topologies/internet2.txt")),
+        "ChinaNet": remove_low_connectivity_vertices(read_graph("topologies/chinanet.txt")),
+        "Geant": remove_low_connectivity_vertices(read_graph("topologies/geant.txt")),
+        "Internet2": remove_low_connectivity_vertices(read_graph("topologies/internet2.txt")),
         "RNP": remove_low_connectivity_vertices(read_graph("topologies/rnp.txt"))
     }
 
@@ -147,4 +147,4 @@ def from_networkx_with_target(G: nx.Graph, best_lambda: float) -> Data:
     return Data(x=x, edge_index=edge_index, y=y)
 
 if __name__ == "__main__":
-    generate_pyg_dataset(num_random_topologies=0)
+    generate_pyg_dataset(num_random_topologies=1000)
