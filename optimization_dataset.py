@@ -65,7 +65,7 @@ def run_topology_optimization(topology: nx.Graph, lambda_values: list):
                 g_fail.remove_edge(*edge_to_fail)
                 try:
                     min_dist = nx.shortest_path_length(g_fail, u, v)
-                    stretch = (len(route_fail) - 1) - min_dist
+                    stretch = (len(packet.hop_history) - 1) - min_dist
                     lambda_avg_stretch[lambda_val].append(stretch)
                 except nx.NetworkXNoPath:
                     continue
@@ -147,4 +147,4 @@ def from_networkx_with_target(G: nx.Graph, best_lambda: float) -> Data:
     return Data(x=x, edge_index=edge_index, y=y)
 
 if __name__ == "__main__":
-    generate_pyg_dataset(num_random_topologies=1000)
+    generate_pyg_dataset(num_random_topologies=100)
