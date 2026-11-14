@@ -2,6 +2,10 @@
 # Author: Leon Okida
 # Last modification: 10/25/2026
 
+# Ignore PyTorch warning
+import warnings
+warnings.filterwarnings("ignore")
+
 import networkx as nx
 
 from routing_sim.routing_algorithms.max_flow_routing import MaxFlowRouting
