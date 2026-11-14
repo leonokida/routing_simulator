@@ -1,6 +1,10 @@
 # Experiment that generates MaxFlowRouting data to train ML model
 # Author: Leon Okida
-# Last modification: 10/25/2026
+# Last modification: 11/14/2026
+
+# Ignore PyTorch warning
+import warnings
+warnings.filterwarnings("ignore")
 
 import networkx as nx
 
@@ -128,8 +132,8 @@ def generate_pyg_dataset(num_random_topologies: int = 50):
             if result is not None:
                 dataset_list.append(result)
 
-    torch.save(dataset_list, "routing_optimization_dataset.pt")
-    print("Dataset saved successfully in 'routing_optimization_dataset.pt'")
+    torch.save(dataset_list, "machine_learning_optimization/dataset/routing_optimization_dataset.pt")
+    print("Dataset saved successfully in 'machine_learning_optimization/dataset/routing_optimization_dataset.pt'")
 
 def from_networkx_with_target(G: nx.Graph, best_lambda: float) -> Data:
     mapping = {node: i for i, node in enumerate(G.nodes())}
@@ -147,4 +151,4 @@ def from_networkx_with_target(G: nx.Graph, best_lambda: float) -> Data:
     return Data(x=x, edge_index=edge_index, y=y)
 
 if __name__ == "__main__":
-    generate_pyg_dataset(num_random_topologies=100)
+    generate_pyg_dataset(num_random_topologies=1000)
