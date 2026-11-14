@@ -6,38 +6,13 @@
 import warnings
 warnings.filterwarnings("ignore")
 
+from machine_learning_optimization.model import LambdaPredictorGNN
+
 import torch
 import torch.nn as nn
 from torch_geometric.loader import DataLoader
-from torch_geometric.nn import GCNConv, global_mean_pool
 
-# --- Architecture of the GNN that predicts the optimal lambda ---
-class LambdaPredictorGNN(torch.nn.Module):
-    def __init__(self, in_channels: int, hidden_channels: int = 64):
-        super().__init__()
-        # GNNConv layers
-        self.conv1 = GCNConv(in_channels, hidden_channels)
-        self.conv2 = GCNConv(hidden_channels, hidden_channels)
-        self.conv3 = GCNConv(hidden_channels, hidden_channels)
-        
-        # Regression layer
-        self.lin = nn.Linear(hidden_channels, 1)
-
-    def forward(self, x, edge_index, batch):
-        x = self.conv1(x, edge_index).relu()
-        x = self.conv2(x, edge_index).relu()
-        x = self.conv3(x, edge_index).relu()
-        
-        # Global mean pooling
-        x = global_mean_pool(x, batch)
-        
-        # Regression
-        x = self.lin(x)
-        
-        # Sigmoid so output is a value between 0 and 1
-        return torch.sigmoid(x).squeeze(-1)
-
-# --- 2. Dataset and DataLoaders ---
+# --- 1. Dataset and DataLoaders ---
 # Loads dataset
 dataset = torch.load("machine_learning_optimization/dataset/routing_optimization_dataset.pt", weights_only=False)
 
@@ -60,16 +35,16 @@ test_dataset = dataset[train_size:]
 train_loader = DataLoader(train_dataset, batch_size=16, shuffle=True)
 test_loader = DataLoader(test_dataset, batch_size=16, shuffle=False)
 
-# --- 3. Training settings ---
+# --- 2. Training settings ---
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 model = LambdaPredictorGNN(in_channels=dataset[0].num_node_features, hidden_channels=64).to(device)
 optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
 criterion = nn.MSELoss()
 
-# --- 4. Training with Early Stopping & Best Model Checkpointing ---
+# --- 3. Training with Early Stopping & Best Model Checkpointing ---
 epochs = 1000
-patience = 15
+patience = 100
 best_val_loss = float('inf')
 patience_counter = 0
 
