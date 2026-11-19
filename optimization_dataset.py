@@ -1,6 +1,6 @@
 # Experiment that generates MaxFlowRouting data to train ML model
 # Author: Leon Okida
-# Last modification: 11/14/2026
+# Last modification: 11/19/2026
 
 # Ignore PyTorch warning
 import warnings
@@ -151,4 +151,4 @@ def from_networkx_with_target(G: nx.Graph, best_lambda: float) -> Data:
     return Data(x=x, edge_index=edge_index, y=y)
 
 if __name__ == "__main__":
-    generate_pyg_dataset(num_random_topologies=1000)
+    generate_pyg_dataset(num_random_topologies=100)
